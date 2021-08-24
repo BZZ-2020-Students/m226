@@ -40,6 +40,38 @@ public class BankKonto {
         System.out.println("Unterdeckung : " + maxUnterdeckung);
     }
 
+    public float getKontostand() {
+        return kontostand;
+    }
+
+    public void setKontostand(float kontostand) {
+        this.kontostand = kontostand;
+    }
+
+    public float getAktZinssatz() {
+        return aktZinssatz;
+    }
+
+    public void setAktZinssatz(float aktZinssatz) {
+        this.aktZinssatz = aktZinssatz;
+    }
+
+    public float getMaxUnterdeckung() {
+        return maxUnterdeckung;
+    }
+
+    public void setMaxUnterdeckung(float maxUnterdeckung) {
+        this.maxUnterdeckung = maxUnterdeckung;
+    }
+
+    public String getBesitzer() {
+        return besitzer;
+    }
+
+    public void setBesitzer(String besitzer) {
+        this.besitzer = besitzer;
+    }
+
     public static void main(String[] args) {
         BankKonto konotoLeer, kontoX, kontoMoritz;
         konotoLeer = new BankKonto();
