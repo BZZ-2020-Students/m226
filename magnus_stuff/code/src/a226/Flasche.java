@@ -6,15 +6,16 @@ public class Flasche {
     private int groesse;
     private boolean offen;
 
-    public Flasche(){
+    public Flasche() {
     }
 
     public Flasche(int inhalt, String name) {
-        this.fuellung = inhalt;
+        if (inhalt < groesse)
+            this.fuellung = inhalt;
         this.name = name;
     }
 
-    public int getGroesse(){
+    public int getGroesse() {
         return groesse;
     }
 
@@ -23,7 +24,8 @@ public class Flasche {
     }
 
     public void setFuellung(int inhalt) {
-        this.fuellung = inhalt;
+        if (inhalt < groesse)
+            this.fuellung = inhalt;
     }
 
     public String getName() {
@@ -33,15 +35,16 @@ public class Flasche {
     public void setName(String name) {
         this.name = name;
     }
-    public void oeffnen(){
+
+    public void oeffnen() {
         offen = true;
     }
 
-    public boolean isOffen(){
+    public boolean isOffen() {
         return offen;
     }
 
-    public void schliessen(){
+    public void schliessen() {
         offen = false;
     }
 }
