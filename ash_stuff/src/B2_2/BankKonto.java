@@ -55,4 +55,7 @@ public class BankKonto {
         kontoMoritz.zeigeKontoInfo();
         System.out.println("--------------------------");
     }
+
+    //Vorteil von kaskadierten Konstruktoren
+    //Es vereinfacht es, die Objekte zu erstellen. Da man immer die Kontruktor hat, der passt;
 }
