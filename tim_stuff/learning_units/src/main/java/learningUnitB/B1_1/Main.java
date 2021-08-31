@@ -1,4 +1,4 @@
-package B1_1;
+package learningUnitB.B1_1;
 
 public class Main {
     public Main() {
