@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"C2_2","c":"Punkt","l":"getX()"},{"p":"C2_2","c":"Punkt","l":"getY()"},{"p":"C2_2","c":"Punkt","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"C2_2","c":"Punkt","l":"Punkt()","u":"%3Cinit%3E()"},{"p":"C2_2","c":"Punkt","l":"setX(int)"},{"p":"C2_2","c":"Punkt","l":"setY(int)"}];updateSearchResults();
