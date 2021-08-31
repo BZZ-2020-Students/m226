@@ -15,7 +15,7 @@ public class Singleton{                                                         
   // Eine Instanzvariable. Sie kann über das erzeugte Objekt                       ¦ - comment : String                     ¦
   // ausgelesen werden.                                                            +----------------------------------------+
   // Die Variable ist vom Typ String.                                              ¦                                        ¦
-  private static String comment;
+  private String comment;
   //
   // Der Konstruktor der Klasse muss private deklariert werden. Somit ist          ¦ - Singleton(comment : String)          ¦
   // sichergestellt, dass er von keiner anderen Klasse her aufgerufen              ¦ + getInstance(s : String) : Singleton  ¦
@@ -24,11 +24,14 @@ public class Singleton{                                                         
   // Dieser Parameter wird dann der Instanz-Variable (oben deklariert) 
   // zugewiesen.
   private Singleton(String comment){
-
+    this.comment = comment;
   }
 
   static Singleton getInstance(String s){
-    if ()
+    if (instance == null){
+      instance = new Singleton(s);
+    }
+    return instance;
   }
   //
   // Die statische Methode getInstance() wird als Klassen-Methode                  +-----------------------------------+

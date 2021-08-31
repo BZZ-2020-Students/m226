@@ -20,9 +20,15 @@ public class SingletonTest{
   //                                                                               ¦  +-----------------------------------+
   //                                                                               ¦  ¦ gib Text von ObjB aus             ¦
   public static void main(String[] args){                                       // +--+-----------------------------------+
-    Singleton objA, objB;
-    //....do it
-    
+    Singleton objA = Singleton.getInstance("mit Text A");
+
+
+
+    System.out.println(objA.getComment());
+    Singleton delete = Singleton.getInstance(null);
+    Singleton objB = Singleton.getInstance("mit Text B");
+    System.out.println(objB.getComment());
+
   }
   
 }
