@@ -1,4 +1,4 @@
-package B2_1;
+package learningUnitB.B2_1;
 
 public class Automobil {
     private String automarke;

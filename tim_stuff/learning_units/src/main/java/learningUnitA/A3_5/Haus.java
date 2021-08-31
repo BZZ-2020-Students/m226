@@ -1,4 +1,4 @@
-package A3_5;
+package learningUnitA.A3_5;
 
 public class Haus {
     private int zimmer;

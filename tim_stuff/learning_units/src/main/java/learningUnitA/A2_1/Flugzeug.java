@@ -1,4 +1,4 @@
-package A2_1;
+package learningUnitA.A2_1;
 
 public class Flugzeug {
     private int gewicht;
