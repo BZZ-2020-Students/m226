@@ -1,5 +1,3 @@
-package üA3_5;
-
 public class Flasche {
     private String name;
     private int groesse;
