@@ -3,8 +3,8 @@ package A3_5;
 public class Flasche {
     private int fuellung;
     private String name;
-    private final int groesse = 500;
-    private boolean offen = false;
+    private int groesse;
+    private boolean istOffen;
 
     public Flasche() {
     }
@@ -19,10 +19,10 @@ public class Flasche {
     }
 
     public void setFuellung(int fuellung) {
-        if (fuellung >= groesse) {
-            throw new IllegalArgumentException();
-        } else {
+        if (fuellung < groesse) {
             this.fuellung = fuellung;
+        }else{
+            System.err.println("Error. Groesse darf nicht kleiner als die Fuellung sein!");
         }
     }
 
@@ -38,15 +38,15 @@ public class Flasche {
         return groesse;
     }
 
-    public void oeffnen() {
-        offen = true;
-    }
-
-    public void schliessen() {
-        offen = false;
+    public void oeffnen(){
+        istOffen = true;
     }
 
     public boolean isOffen() {
-        return offen;
+        return istOffen;
+    }
+
+    public void schliessen(){
+        istOffen = false;
     }
 }

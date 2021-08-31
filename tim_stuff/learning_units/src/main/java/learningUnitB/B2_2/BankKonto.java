@@ -1,4 +1,4 @@
-package B2_2;
+package learningUnitB.B2_2;
 
 public class BankKonto {
     private float kontoStand;

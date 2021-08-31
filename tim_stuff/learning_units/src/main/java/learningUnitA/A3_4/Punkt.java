@@ -1,4 +1,4 @@
-package A3_4;
+package learningUnitA.A3_4;
 
 // Datei: Punkt.java
 // Deklaration der Klasse Punkt. Dem Compiler wird gesagt, dass es
