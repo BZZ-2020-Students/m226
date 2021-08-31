@@ -1,9 +1,9 @@
 /**
  * Beispiel für die Kommmunikation von 2 Klassen über Schnittstellen.
  *
- * @Author: bitte Namen ergänzen
- * @Date: aktuelles Bearbeitungsdatum eintragen
- * @Version: beginnend mit V1.0 die Versionierung nachführen
+ * @author Tim Irmler
+ * @version V1.0
+ * @since 31.08.2021
  */
 public class LoginChecker                                                       //  +----------------------------------+
         // Damit das Zusamenspiel der Klassen funktioniert                                ¦            LoginIF               ¦
