@@ -1,5 +1,3 @@
-package üA3_5;
-
 public class Haus {
     private int zimmer;
     private float miete;
