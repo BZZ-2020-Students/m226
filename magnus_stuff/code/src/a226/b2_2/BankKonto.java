@@ -1,4 +1,4 @@
-package a226;
+package a226.b2_2;
 
 public class BankKonto {
     private float kontostand;

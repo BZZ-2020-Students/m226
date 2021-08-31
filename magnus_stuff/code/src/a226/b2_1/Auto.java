@@ -1,4 +1,4 @@
-package a226;
+package a226.b2_1;
 
 public class Auto {
     private String automarke;
