@@ -37,6 +37,8 @@ public class Singleton{                                                         
   // Liefert den Wert des Attributs comment (Kommentar)
   // Diese Methdeo ist hier nur aus Testzwecken. Sie greift auf die
   // Instanz-Variable (das Attribut) des Objekts zu.
+  // Hello, how do do?
+  // WOW!! AMAZING!!
   private final String comment;
   private static Singleton instance;
 
