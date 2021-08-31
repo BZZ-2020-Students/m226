@@ -1,4 +1,4 @@
-package a226;
+package a226.a2_1;
 
 public class A21 {
     private int gewicht;

@@ -1,4 +1,4 @@
-package a226;
+package a226.a3_5;
 
 public class Flasche {
     private int fuellung;
