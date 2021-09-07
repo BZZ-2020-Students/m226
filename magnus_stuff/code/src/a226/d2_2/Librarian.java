@@ -147,6 +147,9 @@ public class Librarian {
         //    +------+----------------------------------------------------------+
         //
         //....do it
-
+        Book aBook = library.searchBookByTitle(title);
+        if (aBook != null){
+            library.removeBook(aBook);
+        }
     }
 }

@@ -93,9 +93,9 @@ public class LibraryApp{
     //Der Bibliothekar entfernt ein Buch aus der Bibliothek
     System.out.println("\n\nDer Bibliothekar entfernt ein Buch aus der Bibliothek");
     //....do it
-    
+    max.removeBook("Fahrrad");
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
   }
 }
