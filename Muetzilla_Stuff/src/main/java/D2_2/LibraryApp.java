@@ -46,6 +46,7 @@ public class LibraryApp{
     ursula.borrow_aBookByTitle("Buch1");
     ursula.bringBackABook();
     library.printInventory();
+    max.remindCustomer(moritz);
     // Deklaration der Hauptklassen
     //....do it
     

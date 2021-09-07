@@ -119,6 +119,7 @@ public class Librarian{
       // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
       // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zur�ckzubringen" wird ausgegeben
       //....do it
+      String customerName = theCustomer.getName();
       System.out.println();
       
     } 
