@@ -61,7 +61,6 @@ public class Customer{
     //    ¦ else ¦ gib Titel und ISBN des Buchs aus, das ausgeliehen wurde  ¦
     //    +------+----------------------------------------------------------+
     //
-    //....do it
     borrowedBook = theLibrarian.borrow_aBookToCustomerByTitle(title);
     if (borrowedBook == null) {
       System.out.println("Schade gibt es das Buch '"+title+"' nicht.");
@@ -79,7 +78,6 @@ public class Customer{
     // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
     // die lokale Referenz auf das Buch-Objekt muss "gelöscht" werden. Das...
     // ...wird mittels Zuweisung des Wertes null bewerkstelligt!
-    //....do it
     theLibrarian.getABookFromCustomer(borrowedBook);
   }
   
@@ -92,7 +90,6 @@ public class Customer{
     bringBackABook();
     // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
     // Der Text " 'name' bringt Buch 'Titel' zurück" wird ausgegeben
-    //....do it
     System.out.println("");
     
   }

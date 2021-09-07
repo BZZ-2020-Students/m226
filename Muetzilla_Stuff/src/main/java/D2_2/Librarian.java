@@ -36,8 +36,6 @@ public class Librarian{
   @param ISBN-Nummer des Buchs
   */
   public void buyNewBook(String title, String isbn){
-    // nach Sequenzdiagramm implementieren
-    //....do it 
     Book aBook  = new Book(title,isbn);
     String placement = library.addBook(aBook);
     aBook.setPlacement(placement);
@@ -72,7 +70,6 @@ public class Librarian{
     //    �      � > return null                                            �
     //    +------+----------------------------------------------------------+
     //
-    //....do it
     Book aBook = library.searchBookByTitle(title);
     String placement = aBook.getPlacement();
     Book book = library.getBook(placement);
@@ -106,8 +103,6 @@ public class Librarian{
     @param Referenz auf das Buch
     */
     public void getABookFromCustomer(Book aBook){
-      // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
-      //....do it
       library.putBook(aBook);
     }
     
@@ -118,7 +113,6 @@ public class Librarian{
     public void remindCustomer(Customer theCustomer){
       // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
       // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zur�ckzubringen" wird ausgegeben
-      //....do it
       String customerName = theCustomer.getName();
       String titleOfBorrowedBook =  theCustomer.getTitleOfBorrowedBook();
       theCustomer.remind();
