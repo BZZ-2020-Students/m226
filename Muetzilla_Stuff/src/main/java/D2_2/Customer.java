@@ -23,8 +23,8 @@ public class Customer{
   Initialisiert ein Objekt vom Typ Kunden mit dem Namen des Kunden.
   Zudem wird die Referenz zum Bibliothekar mitgeliefert. Diese wird dann
   gespeichert.
-  @param Name des Bibliothekar 
-  @param Referenz auf Bibliothekar
+  @param _name Name des Bibliothekar
+  @param theLibrarian Referenz auf Bibliothekar
   */
   public Customer(String _name, Librarian theLibrarian){
     name = _name;
@@ -45,7 +45,7 @@ public class Customer{
   Bezieht beim Bibliothekar das Buch, dessen Titel mitgegeben wird.
   <p>Ist das Buch verfügbar, wird die Referenz abgespeichert.<br>
   Andernfalls (Referenz ist null) wird eine entsprechende Meldung ausgegeben.</p>
-  @param Titel des Buchs
+  @param title Titel des Buchs
   */
   public void borrow_aBookByTitle(String title){
     // Implementieren Sie entsprechend dem Sequenzdiagramm und dem
@@ -91,7 +91,7 @@ public class Customer{
     // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
     // Der Text " 'name' bringt Buch 'Titel' zurück" wird ausgegeben
     //....do it
-    System.out.println(.........;
+    System.out.println("");
     
   }
   
