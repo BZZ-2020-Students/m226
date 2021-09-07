@@ -1,18 +1,15 @@
-package a226.d2_2;
-
-
 /**
  * Die Klasse beschreibt einen Kunden, der in der Bibliothek
  * ein Buch<br>
  * - ausleihen [ borrow_aBookByTitle() ] oder<br>
- * - zurückgeben [ bringBackABook() ]<br>
+ * - zurÃ¼ckgeben [ bringBackABook() ]<br>
  * will.<br>
  * Die Ausleihe begrenzt sich pro Kunde auf ein Buch.
  * <p>Der Kunde kann gemahnt werden.</p>
  *
- * @Author: bitte Namen ergänzen
- * @Date: aktuelles Bearbeitungsdatum eintragen
- * @Version: beginnend mit V1.0 die Versionierung nachführen
+ * @author Tim Irmler
+ * @Date: 07.09.2021
+ * @Version: V1.0
  */
 public class Customer {
 
@@ -46,7 +43,7 @@ public class Customer {
 
     /**
      * Bezieht beim Bibliothekar das Buch, dessen Titel mitgegeben wird.
-     * <p>Ist das Buch verfügbar, wird die Referenz abgespeichert.<br>
+     * <p>Ist das Buch verfÃ¼gbar, wird die Referenz abgespeichert.<br>
      * Andernfalls (Referenz ist null) wird eine entsprechende Meldung ausgegeben.</p>
      *
      * @param title des Buchs
@@ -56,35 +53,34 @@ public class Customer {
         // hier gezeigten Struktogramm den Code.
         //
         //    +-----------------------------------------------------------------+
-        //    | Gib Bibliothekar den gewünschten Buchtitel                      ¦
+        //    | Gib Bibliothekar den gewÃ¼nschten Buchtitel                      Â¦
         //    +-----------------------------------------------------------------+
-        //    ¦ if (keine gültige Buchreferenez)                                ¦
-        //    ¦    --+----------------------------------------------------------+
-        //    ¦ then ¦ gib Meldung aus, dass Buch mit gesuchten Titel fehlt     ¦
-        //    ¦    --+----------------------------------------------------------+
-        //    ¦ else ¦ gib Titel und ISBN des Buchs aus, das ausgeliehen wurde  ¦
+        //    Â¦ if (keine gÃ¼ltige Buchreferenez)                                Â¦
+        //    Â¦    --+----------------------------------------------------------+
+        //    Â¦ then Â¦ gib Meldung aus, dass Buch mit gesuchten Titel fehlt     Â¦
+        //    Â¦    --+----------------------------------------------------------+
+        //    Â¦ else Â¦ gib Titel und ISBN des Buchs aus, das ausgeliehen wurde  Â¦
         //    +------+----------------------------------------------------------+
         //
-        //....do it
         borrowedBook = theLibrarian.borrow_aBookToCustomerByTitle(title);
         if (borrowedBook == null) {
             System.out.println("Schade gibt es das Buch '" + title + "' nicht.");
-        } // end of if
-        else
+        } else {
             System.out.println(name + " leiht Buch '" + borrowedBook.getTitle() + "' aus");
+        }
     }
 
 
     /**
-     * Bringt dem Bibliothekar das ausgeliehene Buch zurück.
-     * Nach der Rückgabe des Buchs wird die Referenz auf null gesetzt.
+     * Bringt dem Bibliothekar das ausgeliehene Buch zurÃ¼ck.
+     * Nach der RÃ¼ckgabe des Buchs wird die Referenz auf null gesetzt.
      */
     public void bringBackABook() {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
-        // die lokale Referenz auf das Buch-Objekt muss "gelöscht" werden. Das...
+        // die lokale Referenz auf das Buch-Objekt muss "gelÃ¶scht" werden. Das...
         // ...wird mittels Zuweisung des Wertes null bewerkstelligt!
-        //....do it
         theLibrarian.getABookFromCustomer(borrowedBook);
+        borrowedBook = null;
     }
 
 
@@ -93,11 +89,9 @@ public class Customer {
      */
     public void remind() {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
-        // Der Text " 'name' bringt Buch 'Titel' zurück" wird ausgegeben
-        //....do it
-        String title = borrowedBook.getTitle();
+        // Der Text " 'name' bringt Buch 'Titel' zurÃ¼ck" wird ausgegeben
+        System.out.println(name + " bringt Buch " + getTitleOfBorrowedBook() + " zurÃ¼ck");
         bringBackABook();
-        System.out.println(name + " bringt das Buch " + title + " zurück");
     }
 
 
@@ -108,9 +102,7 @@ public class Customer {
      */
     public String getTitleOfBorrowedBook() {
         // Implementieren Sie entsprechend dem Sequenzdiagramm
-        //....do it
-
-
         return borrowedBook.getTitle();
+
     }
 }

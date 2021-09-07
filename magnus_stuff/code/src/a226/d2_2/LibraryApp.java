@@ -58,43 +58,44 @@ public class LibraryApp{
     
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 3
     //--------------
     // Kunden leihen ein Buch aus
     System.out.println("\n\nEs erfolgen Ausleihen");
     //....do it
-    
+    moritz.borrow_aBookByTitle("Auto");
+    ursula.borrow_aBookByTitle("Bus");
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 4
     // -------------
     // Eine Kundin bringt das Buch selbständig zurück.
     System.out.println("\n\nKundin "+ursula.getName()+" bringt ein Buch zurück");
     //....do it
-    
+    ursula.bringBackABook();
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // Ein Kunde wird gemahnt und bringt dann sein Buch zurück
     System.out.println("\n\nEs folgt eine Mahnung an Kunde " + moritz.getName());
     //....do it
-    
+    max.remindCustomer(moritz);
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 5:
     // --------------    
     //Der Bibliothekar entfernt ein Buch aus der Bibliothek
     System.out.println("\n\nDer Bibliothekar entfernt ein Buch aus der Bibliothek");
     //....do it
-    
+    max.removeBook("Fahrrad");
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
   }
 }

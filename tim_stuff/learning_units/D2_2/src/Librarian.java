@@ -1,19 +1,17 @@
-package a226.d2_2;
-
 /**
- * Die Klasse repräsentiert den Bibliotheker.
+ * Die Klasse reprÃ¤sentiert den Bibliotheker.
  * <p>Der Bibliothekar;
  * <ul>
- * <li>kauft neue Bücher ein, buyNewBook()</li>
- * <li>leiht Bücher dem Kunden aus, borrow_aBookToCustomer.....()</li>
- * <li>nimmt Bücher zurück, getABookFromCustomer</li>
+ * <li>kauft neue BÃ¼cher ein, buyNewBook()</li>
+ * <li>leiht BÃ¼cher dem Kunden aus, borrow_aBookToCustomer.....()</li>
+ * <li>nimmt BÃ¼cher zurÃ¼ck, getABookFromCustomer</li>
  * <li>mahnt den Kunden, remindCustomer()</li>
- * <li>entfernt Bücher aus der Bibliothek, </li>
+ * <li>entfernt BÃ¼cher aus der Bibliothek, </li>
  * </ul></p>
  *
- * @Author: bitte Namen ergänzen
- * @Date: aktuelles Bearbeitungsdatum eintragen
- * @Version: beginnend mit V1.0 die Versionierung nachführen
+ * @author Tim Irmler
+ * @Date: 07.09.2021
+ * @Version: V1.0
  */
 public class Librarian {
 
@@ -28,25 +26,23 @@ public class Librarian {
     }
 
     /**
-     * Ein neues Buch mit Titel und ISBN-Nummer wird der Bibliothek beigefügt.
-     * <p>Die Methode erstellt ein neues Buch und fügt es der Bibliothek zu.
+     * Ein neues Buch mit Titel und ISBN-Nummer wird der Bibliothek beigefÃ¼gt.
+     * <p>Die Methode erstellt ein neues Buch und fÃ¼gt es der Bibliothek zu.
      * Von der Bibliothek wird der Ablageort mitgeteilt, der dann dem Buch
-     * übergeben wird.</p>
+     * Ã¼bergeben wird.</p>
      *
      * @param title       des Buchs
      * @param isbn-Nummer des Buchs
      */
     public void buyNewBook(String title, String isbn) {
         // nach Sequenzdiagramm implementieren
-        //....do it
-        Book aBook = new Book(title, isbn);
-        String placement = library.addBook(aBook);
-        aBook.setPlacement(placement);
-    
+        Book newBook = new Book(title, isbn);
+        newBook.setPlacement(library.addBook(newBook));
+
     /* Hinweis:
-    Aufrufe können ineinander geschachtelt sein. Es ist üblich, das
-    so zu machen, dient aber nicht der Übersichtlichkeit (vor allem
-    nicht für Anfänger). 
+    Aufrufe kÃ¶nnen ineinander geschachtelt sein. Es ist Ã¼blich, das
+    so zu machen, dient aber nicht der Ãœbersichtlichkeit (vor allem
+    nicht fÃ¼r AnfÃ¤nger). 
     */
     }
 
@@ -63,23 +59,28 @@ public class Librarian {
         // gezeigten Struktogrammden Code.
         //
         //    +-----------------------------------------------------------------+
-        //    ¦ suche Buchtitel in Bibliothek  ( --> liefert die Referenz)      ¦
+        //    Â¦ suche Buchtitel in Bibliothek  ( --> liefert die Referenz)      Â¦
         //    +-----------------------------------------------------------------+
-        //    ¦ if (gültige Buchreferenez)                                      ¦
-        //    ¦    --+----------------------------------------------------------+
-        //    ¦ then ¦ > return Buchreferenz                                    ¦
-        //    ¦    --+----------------------------------------------------------+
-        //    ¦ else ¦ gib eine Meldung aus, dass Buchtitel nicht in Bibliothek ¦
-        //    ¦      +----------------------------------------------------------+
-        //    ¦      ¦ > return null                                            ¦
+        //    Â¦ if (gÃ¼ltige Buchreferenez)                                      Â¦
+        //    Â¦    --+----------------------------------------------------------+
+        //    Â¦ then Â¦ > return Buchreferenz                                    Â¦
+        //    Â¦    --+----------------------------------------------------------+
+        //    Â¦ else Â¦ gib eine Meldung aus, dass Buchtitel nicht in Bibliothek Â¦
+        //    Â¦      +----------------------------------------------------------+
+        //    Â¦      Â¦ > return null                                            Â¦
         //    +------+----------------------------------------------------------+
         //
-        //....do it
-        Book aBook = library.searchBookByTitle(title);
-        String placement = aBook.getPlacement();
-        Book book = library.getBook(placement);
+        Book book = library.searchBookByTitle(title);
+        if (book == null) {
+            System.out.println("Buch mit Titel \"" + title + "\" wurde nicht gefunden!");
+        } else {
+            String placement = book.getPlacement();
+            return library.getBook(placement);
+        }
+
         return book;
     }
+
 
     /**
      * Das angefragte Buch wird dem Kunden ausgeliehen.
@@ -95,20 +96,19 @@ public class Librarian {
             return aBook;
         } // end of if
         else {
-            System.out.println("Das Buch mit der ISBN-Numemr'" + isbn + "' ist nicht verfügbar");
+            System.out.println("Das Buch mit der ISBN-Numemr'" + isbn + "' ist nicht verfÃ¼gbar");
             return null;
         }
     }
 
 
     /**
-     * Das gelieferte Buch wird in die Bibliothek zurückgestellt.
+     * Das gelieferte Buch wird in die Bibliothek zurÃ¼ckgestellt.
      *
      * @param aBook auf das Buch
      */
     public void getABookFromCustomer(Book aBook) {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
-        //....do it
         library.putBook(aBook);
     }
 
@@ -119,11 +119,8 @@ public class Librarian {
      */
     public void remindCustomer(Customer theCustomer) {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
-        // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zurückzubringen" wird ausgegeben
-        //....do it
-        String name = theCustomer.getName();
-        String title = theCustomer.getTitleOfBorrowedBook();
-        System.out.println("Kunde " + name + " wird gemahnt, das Buch " + title + " zurückzubringen");
+        // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zurÃ¼ckzubringen" wird ausgegeben
+        System.out.println("Kunde " + theCustomer.getName() + " wird gemahnt, das Buch " + theCustomer.getTitleOfBorrowedBook() + " zurÃ¼ckzubringen");
         theCustomer.remind();
     }
 
@@ -139,17 +136,16 @@ public class Librarian {
         // gezeigten Struktogrammden Code.
         //
         //    +-----------------------------------------------------------------+
-        //    ¦ suche Buchtitel in Bibliothek  ( --> liefert die Referenz)      ¦
+        //    Â¦ suche Buchtitel in Bibliothek  ( --> liefert die Referenz)      Â¦
         //    +-----------------------------------------------------------------+
-        //    ¦ if (gültige Buchreferenz)                                       ¦
-        //    ¦    --+----------------------------------------------------------+
-        //    ¦ then ¦ entferen Buch aus der Bibliothek                         ¦
+        //    Â¦ if (gÃ¼ltige Buchreferenz)                                       Â¦
+        //    Â¦    --+----------------------------------------------------------+
+        //    Â¦ then Â¦ entferen Buch aus der Bibliothek                         Â¦
         //    +------+----------------------------------------------------------+
         //
-        //....do it
-        Book aBook = library.searchBookByTitle(title);
-        if (aBook != null){
-            library.removeBook(aBook);
+        Book book = library.searchBookByTitle(title);
+        if(book != null) {
+            library.removeBook(book);
         }
     }
 }
