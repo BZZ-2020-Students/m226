@@ -76,17 +76,17 @@ public class LibraryApp{
     // Eine Kundin bringt das Buch selbständig zurück.
     System.out.println("\n\nKundin "+ursula.getName()+" bringt ein Buch zurück");
     //....do it
-    
+    ursula.bringBackABook();
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // Ein Kunde wird gemahnt und bringt dann sein Buch zurück
     System.out.println("\n\nEs folgt eine Mahnung an Kunde " + moritz.getName());
     //....do it
-    
+    max.remindCustomer(moritz);
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 5:
     // --------------    

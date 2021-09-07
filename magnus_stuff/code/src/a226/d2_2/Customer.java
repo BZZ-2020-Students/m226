@@ -1,7 +1,6 @@
 package a226.d2_2;
 
 
-
 /**
  * Die Klasse beschreibt einen Kunden, der in der Bibliothek
  * ein Buch<br>
@@ -85,7 +84,7 @@ public class Customer {
         // die lokale Referenz auf das Buch-Objekt muss "gelöscht" werden. Das...
         // ...wird mittels Zuweisung des Wertes null bewerkstelligt!
         //....do it
-
+        theLibrarian.getABookFromCustomer(borrowedBook);
     }
 
 
@@ -96,8 +95,9 @@ public class Customer {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
         // Der Text " 'name' bringt Buch 'Titel' zurück" wird ausgegeben
         //....do it
-        System.out.println(".........");
-
+        String title = borrowedBook.getTitle();
+        bringBackABook();
+        System.out.println(name + " bringt das Buch " + title + " zurück");
     }
 
 
@@ -107,8 +107,10 @@ public class Customer {
      * @return Buchtitel
      */
     public String getTitleOfBorrowedBook() {
-      // Implementieren Sie entsprechend dem Sequenzdiagramm
-      //....do it
-      return null;
+        // Implementieren Sie entsprechend dem Sequenzdiagramm
+        //....do it
+
+
+        return borrowedBook.getTitle();
     }
 }

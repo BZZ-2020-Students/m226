@@ -109,7 +109,7 @@ public class Librarian {
     public void getABookFromCustomer(Book aBook) {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
         //....do it
-
+        library.putBook(aBook);
     }
 
     /**
@@ -121,8 +121,10 @@ public class Librarian {
         // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
         // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zurückzubringen" wird ausgegeben
         //....do it
-        System.out.println(".........");
-
+        String name = theCustomer.getName();
+        String title = theCustomer.getTitleOfBorrowedBook();
+        System.out.println("Kunde " + name + " wird gemahnt, das Buch " + title + " zurückzubringen");
+        theCustomer.remind();
     }
 
 
