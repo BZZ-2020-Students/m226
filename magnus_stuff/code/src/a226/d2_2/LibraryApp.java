@@ -58,7 +58,7 @@ public class LibraryApp{
     
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 3
     //--------------
