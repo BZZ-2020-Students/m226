@@ -14,7 +14,7 @@ public class Book {
         this.placement = _placement;
     }
 
-    
+
     public String getTitle() {
         return this.title;
     }
