@@ -33,7 +33,12 @@ public class LibraryApp{
   public static void main(String[] args){
     // Teilauftrag 1
     // -------------
-    Library lib = new Library();
+    Library library = new Library();
+    Librarian max =  new Librarian(library);
+    Customer moritz = new Customer("Moritz", max);
+    Customer ursula = new Customer("Ursula", max);
+
+
     // Deklaration der Hauptklassen
     //....do it
     
