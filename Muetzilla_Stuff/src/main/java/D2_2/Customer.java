@@ -103,6 +103,6 @@ public class Customer{
   public String getTitleOfBorrowedBook(){
     // Implementieren Sie entsprechend dem Sequenzdiagramm
     //....do it
-    
+    return "";
   }
 }

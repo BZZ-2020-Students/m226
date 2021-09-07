@@ -33,6 +33,7 @@ public class LibraryApp{
   public static void main(String[] args){
     // Teilauftrag 1
     // -------------
+    Library lib = new Library();
     // Deklaration der Hauptklassen
     //....do it
     
