@@ -41,8 +41,7 @@ public class Librarian{
     Book aBook  = new Book(title,isbn);
     String placement = library.addBook(aBook);
     aBook.setPlacement(placement);
-    library.printInventory();
-    
+
     /* Hinweis:
     Aufrufe k�nnen ineinander geschachtelt sein. Es ist �blich, das
     so zu machen, dient aber nicht der �bersichtlichkeit (vor allem
@@ -74,7 +73,11 @@ public class Librarian{
     //    +------+----------------------------------------------------------+
     //
     //....do it
-    
+    Book aBook = library.searchBookByTitle(title);
+    String placement = aBook.getPlacement();
+    Book book = library.getBook(placement);
+
+    return book;
     
     /**
     Das angefragte Buch wird dem Kunden ausgeliehen.
@@ -83,6 +86,9 @@ public class Librarian{
     @param ISBN-Nummer des Buchs
     @return Referenz auf das Buch oder null, wenn es den Titel nicht gibt.
     */
+
+
+    }
     public Book borrow_aBookToCustomerByISBN(String isbn){
       Book aBook = library.searchBookByISBN(isbn);
       if (aBook != null) {
@@ -113,7 +119,7 @@ public class Librarian{
       // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
       // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zur�ckzubringen" wird ausgegeben
       //....do it
-      System.out.println(.........;
+      System.out.println();
       
     } 
     

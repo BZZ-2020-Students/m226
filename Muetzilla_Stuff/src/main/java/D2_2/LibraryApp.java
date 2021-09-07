@@ -37,8 +37,13 @@ public class LibraryApp{
     Librarian max =  new Librarian(library);
     Customer moritz = new Customer("Moritz", max);
     Customer ursula = new Customer("Ursula", max);
-
-
+    for (int i = 0; i < 5; i++) {
+      max.buyNewBook("Buch" + i, String.valueOf(i));
+    }
+    library.printInventory();
+    moritz.borrow_aBookByTitle("Buch0");
+    library.printInventory();
+    ursula.borrow_aBookByTitle("Buch1");
     // Deklaration der Hauptklassen
     //....do it
     
