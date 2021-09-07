@@ -88,6 +88,8 @@ public class Customer{
   
   */
   public void remind(){
+    String title = borrowedBook.getTitle();
+    bringBackABook();
     // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
     // Der Text " 'name' bringt Buch 'Titel' zurück" wird ausgegeben
     //....do it
@@ -101,8 +103,6 @@ public class Customer{
   @return Buchtitel
   */
   public String getTitleOfBorrowedBook(){
-    // Implementieren Sie entsprechend dem Sequenzdiagramm
-    //....do it
-    return "";
+    return borrowedBook.getTitle();
   }
 }

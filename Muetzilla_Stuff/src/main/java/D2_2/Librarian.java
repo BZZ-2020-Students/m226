@@ -120,6 +120,8 @@ public class Librarian{
       // Der Text "Kunde 'name' wird gemahnt, das Buch 'Titel' zur�ckzubringen" wird ausgegeben
       //....do it
       String customerName = theCustomer.getName();
+      String titleOfBorrowedBook =  theCustomer.getTitleOfBorrowedBook();
+      theCustomer.remind();
       System.out.println();
       
     } 
@@ -143,6 +145,7 @@ public class Librarian{
       //    +------+----------------------------------------------------------+
       //
       //....do it
-      
+      Book aBook = library.searchBookByTitle(title);
+      library.removeBook(aBook);
     }
   }

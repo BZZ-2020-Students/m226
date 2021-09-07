@@ -37,29 +37,14 @@ public class LibraryApp{
     Librarian max =  new Librarian(library);
     Customer moritz = new Customer("Moritz", max);
     Customer ursula = new Customer("Ursula", max);
+
+
+
+
+    System.out.println("Der Bibliothekar kauft neue B�cher und stellt diese in die Bibliothek");
     for (int i = 0; i < 5; i++) {
       max.buyNewBook("Buch" + i, String.valueOf(i));
     }
-    library.printInventory();
-    moritz.borrow_aBookByTitle("Buch0");
-    library.printInventory();
-    ursula.borrow_aBookByTitle("Buch1");
-    ursula.bringBackABook();
-    library.printInventory();
-    max.remindCustomer(moritz);
-    // Deklaration der Hauptklassen
-    //....do it
-    
-    // Erzeugen der Objekte
-    //....do it
-    
-    
-    // -------------
-    // Teilauftrag 2
-    // -------------
-    // B�cher in die Bibliothek einreihen
-    System.out.println("Der Bibliothekar kauft neue B�cher und stellt diese in die Bibliothek");
-    //...do it
     
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
@@ -69,24 +54,26 @@ public class LibraryApp{
     //--------------
     // Kunden leihen ein Buch aus
     System.out.println("\n\nEs erfolgen Ausleihen");
-    //....do it
-    
-    // zur Kontrolle das Inventar der Bibliothek anzeigen
-    //....do it
+    library.printInventory();
+    moritz.borrow_aBookByTitle("Buch0");
+    library.printInventory();
+    ursula.borrow_aBookByTitle("Buch1");
     
     // -------------
     // Teilauftrag 4
     // -------------
     // Eine Kundin bringt das Buch selbst�ndig zur�ck.
     System.out.println("\n\nKundin "+ursula.getName()+" bringt ein Buch zur�ck");
-    //....do it
+    ursula.bringBackABook();
+    library.printInventory();
     
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
     
     // Ein Kunde wird gemahnt und bringt dann sein Buch zur�ck
     System.out.println("\n\nEs folgt eine Mahnung an Kunde " + moritz.getName());
-    //....do it
+    max.remindCustomer(moritz);
+    library.printInventory();
     
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
@@ -97,7 +84,8 @@ public class LibraryApp{
     //Der Bibliothekar entfernt ein Buch aus der Bibliothek
     System.out.println("\n\nDer Bibliothekar entfernt ein Buch aus der Bibliothek");
     //....do it
-    
+    max.removeBook("Buch2");
+    library.printInventory();
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
     
