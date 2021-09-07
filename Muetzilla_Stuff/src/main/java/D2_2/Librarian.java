@@ -38,7 +38,10 @@ public class Librarian{
   public void buyNewBook(String title, String isbn){
     // nach Sequenzdiagramm implementieren
     //....do it 
-    
+    Book aBook  = new Book(title,isbn);
+    String placement = library.addBook(aBook);
+    aBook.setPlacement(placement);
+    library.printInventory();
     
     /* Hinweis:
     Aufrufe k�nnen ineinander geschachtelt sein. Es ist �blich, das
