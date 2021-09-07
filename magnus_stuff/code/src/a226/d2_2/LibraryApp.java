@@ -65,10 +65,11 @@ public class LibraryApp{
     // Kunden leihen ein Buch aus
     System.out.println("\n\nEs erfolgen Ausleihen");
     //....do it
-    
+    moritz.borrow_aBookByTitle("Auto");
+    ursula.borrow_aBookByTitle("Bus");
     // zur Kontrolle das Inventar der Bibliothek anzeigen
     //....do it
-    
+    library.printInventory();
     // -------------
     // Teilauftrag 4
     // -------------

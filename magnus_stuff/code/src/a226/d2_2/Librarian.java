@@ -75,7 +75,10 @@ public class Librarian {
         //    +------+----------------------------------------------------------+
         //
         //....do it
-        return null;
+        Book aBook = library.searchBookByTitle(title);
+        String placement = aBook.getPlacement();
+        Book book = library.getBook(placement);
+        return book;
     }
 
     /**
