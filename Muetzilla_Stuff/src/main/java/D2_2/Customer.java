@@ -80,7 +80,7 @@ public class Customer{
     // die lokale Referenz auf das Buch-Objekt muss "gelöscht" werden. Das...
     // ...wird mittels Zuweisung des Wertes null bewerkstelligt!
     //....do it
-    
+    theLibrarian.getABookFromCustomer(borrowedBook);
   }
   
   

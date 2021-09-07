@@ -108,7 +108,7 @@ public class Librarian{
     public void getABookFromCustomer(Book aBook){
       // Implementieren Sie entsprechend dem Sequenzdiagramm den Code
       //....do it
-      
+      library.putBook(aBook);
     }
     
     /**

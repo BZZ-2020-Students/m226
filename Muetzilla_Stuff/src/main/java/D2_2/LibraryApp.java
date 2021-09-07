@@ -44,6 +44,8 @@ public class LibraryApp{
     moritz.borrow_aBookByTitle("Buch0");
     library.printInventory();
     ursula.borrow_aBookByTitle("Buch1");
+    ursula.bringBackABook();
+    library.printInventory();
     // Deklaration der Hauptklassen
     //....do it
     
