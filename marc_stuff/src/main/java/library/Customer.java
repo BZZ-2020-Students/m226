@@ -69,8 +69,9 @@ public class Customer {
         if (borrowedBook == null) {
             System.out.println("Schade gibt es das Buch '" + title + "' nicht.");
         } // end of if
-        else
+        else {
             System.out.println(name + " leiht Buch '" + borrowedBook.getTitle() + "' aus");
+        }
     }
 
 
@@ -84,6 +85,7 @@ public class Customer {
         // ...wird mittels Zuweisung des Wertes null bewerkstelligt!
         //....do it
         theLibrarian.getABookFromCustomer(borrowedBook);
+        borrowedBook = null;
 
     }
 

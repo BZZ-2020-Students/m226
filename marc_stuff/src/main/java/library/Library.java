@@ -78,6 +78,8 @@ public class Library {
 
         while(e.hasMoreElements()) {
             Book b = e.nextElement();
+            if (b == null) continue;
+
             System.out.println("-------------------------------------");
             System.out.println("Buch:    " + b.getTitle());
             System.out.println("ISBN:    " + b.getISBN());
