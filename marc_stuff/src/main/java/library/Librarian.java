@@ -75,7 +75,7 @@ public class Librarian {
         //    +------+----------------------------------------------------------+
         //
         //....do it
-        Book b = library.getBook(title);
+        Book b = library.searchBookByTitle(title);
         String placement = b.getPlacement();
         return library.getBook(placement);
     }
