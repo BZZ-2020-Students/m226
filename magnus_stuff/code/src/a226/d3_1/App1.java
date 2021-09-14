@@ -5,9 +5,9 @@ package a226.d3_1;
    "einseitige" Beziehung pflegen.
    (Objekt A kennt Objekt B aber nicht umgekehrt)
    
-   @Author:   bitte Namen ergänzen
-   @Date:     aktuelles Bearbeitungsdatum eintragen
-   @Version:  beginnend mit V1.0 die Versionierung nachführen
+   @Author:   Magnus Goetz
+   @Date:     14.09.2021
+   @Version:  V1.0
 */
 public class App1{
   
