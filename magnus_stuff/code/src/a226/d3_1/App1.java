@@ -22,8 +22,9 @@ public class App1{
 
     besitzer = new HausBesitzer(haus);
 
+    System.out.println(besitzer);
 
-    
+
   }
   
 }
