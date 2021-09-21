@@ -14,7 +14,10 @@ public class App2 {
         // Auftrag 4a
         // ----------
         // Deklaration der 4 Objekte für Auto, Fahrer (2 Mal) und Besitzer
-        //....do it
+        Auto auto = new Auto();
+        AutoBesitzer besitzer = new AutoBesitzer(auto);
+        Fahrer max = new Fahrer(auto, "Max");
+        Fahrer moritz = new Fahrer(auto, "Moritz");
 
         // Auftrag 4b
         // ----------
