@@ -4,21 +4,33 @@
    Methodenaufrufe.
    
    @Author:   Amsler Nadina (shirin197)
-   @Date:     13.09.2021
-   @Version:  beginnend mit V1.0 die Versionierung nachf�hren
+   @Date:     13.09.2021 / Überarbeitet: 26.09.2021
+   @Version:  beginnend mit V2.0 die Versionierung nachf�hren
 */
 public class Band{
-  
-  
+
+
   public static void main(String[] args){
     /* Referenz auf die benötigten Objekte für die Band */
-    Instrument gitarre = new Instrument("Gitarre");
-    Instrument klavier = new Instrument("Klavier");
-    Musiker moritz = new Musiker("Moritz", gitarre);
-    Musiker max = new Musiker("Max", klavier);
-    
+    // ....to do
+    Instrument gitarre;
+    Instrument klavier;
+
+    Musiker moritz;
+    Musiker max;
+
+    /* Erzeigen der Objekte */
+    // ....to do: halten Sie sich an den Ablauf im Sequenzdiagramm
+    gitarre = new Instrument("Gitarre");
+    klavier = new Instrument("Klavier");
+
+    moritz = new Musiker("Moritz", gitarre);
+    max = new Musiker("Max", klavier);
+
+    moritz.spielNote('a');
+    max.spielNote('f');
+
     /* Töne spielen */
-    max.spielNote('a');
-    moritz.spielNote('f');
+
   }
 }
