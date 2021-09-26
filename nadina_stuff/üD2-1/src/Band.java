@@ -27,10 +27,11 @@ public class Band{
     moritz = new Musiker("Moritz", gitarre);
     max = new Musiker("Max", klavier);
 
+    /* Töne spielen */
     moritz.spielNote('a');
     max.spielNote('f');
 
-    /* Töne spielen */
+
 
   }
 }
