@@ -2,7 +2,7 @@ package E2_1;
 
 public class Auto {
     private String nrString;
-    private Rad[] raeder;
+    private Rad[] raeder = new Rad[4];
     private Motor motor;
 
     public Auto(){
