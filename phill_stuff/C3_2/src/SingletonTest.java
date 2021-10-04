@@ -1,29 +1,26 @@
 /**
    Demonstration des (sinnvollen) Einsatzes von statisch deklarierten
    Variablen und Methoden am Beispiel des Singleton-Pattern.
-   Die Klasse SingletonStart dient der Programmausführung.
+   Die Klasse SingletonStart dient der Programmausfï¿½hrung.
    
-   @Author:   bitte Namen ergänzen
+   @Author:   bitte Namen ergï¿½nzen
    @Date:     aktuelles Bearbeitungsdatum eintragen
-   @Version:  beginnend mit V1.0 die Versionierung nachführen
+   @Version:  beginnend mit V1.0 die Versionierung nachfï¿½hren
 */
 public class SingletonTest{
   // Die Klasse dient einzig dazu, eine main-Methode bereitzustellen.
   //                                                                               +--------------------------------------+
-  // In main werden 2 Objektreferenzen der Klasse Singleton                        ¦ main()                               ¦
-  // erzeugt. Dazu wird die statische Methode getInstance("Text")                  ¦  +-----------------------------------+
-  // ausgeführt.                                                                   ¦  ¦ erzeuge Objekt objA (mit Text A)  ¦
-  // Um die Wirkung zu sehen, wird dann über beide Referenzen                      ¦  +-----------------------------------+
-  // die Methode getComment() aufgerufen.                                          ¦  ¦ erzeuge Objekt objB (mit Text B)  ¦
-  //                                                                               ¦  +-----------------------------------+
-  //                                                                               ¦  ¦ gib Text von ObjA aus             ¦
-  //                                                                               ¦  +-----------------------------------+
-  //                                                                               ¦  ¦ gib Text von ObjB aus             ¦
+  // In main werden 2 Objektreferenzen der Klasse Singleton                        ï¿½ main()                               ï¿½
+  // erzeugt. Dazu wird die statische Methode getInstance("Text")                  ï¿½  +-----------------------------------+
+  // ausgefï¿½hrt.                                                                   ï¿½  ï¿½ erzeuge Objekt objA (mit Text A)  ï¿½
+  // Um die Wirkung zu sehen, wird dann ï¿½ber beide Referenzen                      ï¿½  +-----------------------------------+
+  // die Methode getComment() aufgerufen.                                          ï¿½  ï¿½ erzeuge Objekt objB (mit Text B)  ï¿½
+  //                                                                               ï¿½  +-----------------------------------+
+  //                                                                               ï¿½  ï¿½ gib Text von ObjA aus             ï¿½
+  //                                                                               ï¿½  +-----------------------------------+
+  //                                                                               ï¿½  ï¿½ gib Text von ObjB aus             ï¿½
   public static void main(String[] args){                                       // +--+-----------------------------------+
     Singleton objA = Singleton.getInstance("mit Text A");
-
-
-
     System.out.println(objA.getComment());
     Singleton delete = Singleton.getInstance(null);
     Singleton objB = Singleton.getInstance("mit Text B");

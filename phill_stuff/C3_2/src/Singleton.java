@@ -2,26 +2,26 @@
    Demonstration des (sinnvollen) EInsatzes von statisch deklarierten
    Variablen und Methoden am Beispiel des Singleton-Pattern.
    
-   @Author:   bitte Namen ergänzen
+   @Author:   bitte Namen ergï¿½nzen
    @Date:     aktuelles Bearbeitungsdatum eintragen
-   @Version:  beginnend mit V1.0 die Versionierung nachführen
+   @Version:  beginnend mit V1.0 die Versionierung nachfï¿½hren
 */
 public class Singleton{                                                         // +----------------------------------------+
-  //                                                                               ¦            Singleton                   ¦
+  //                                                                               ï¿½            Singleton                   ï¿½
   // Die eigene Referenz in einer statischen Variable halten. Sie wird             +----------------------------------------+
-  // mit null initialisert.                                                        ¦ + instance : Singleton                 ¦
+  // mit null initialisert.                                                        ï¿½ + instance : Singleton                 ï¿½
   private static Singleton instance = null;
   //
-  // Eine Instanzvariable. Sie kann über das erzeugte Objekt                       ¦ - comment : String                     ¦
+  // Eine Instanzvariable. Sie kann ï¿½ber das erzeugte Objekt                       ï¿½ - comment : String                     ï¿½
   // ausgelesen werden.                                                            +----------------------------------------+
-  // Die Variable ist vom Typ String.                                              ¦                                        ¦
+  // Die Variable ist vom Typ String.                                              ï¿½                                        ï¿½
   private String comment;
   //
-  // Der Konstruktor der Klasse muss private deklariert werden. Somit ist          ¦ - Singleton(comment : String)          ¦
-  // sichergestellt, dass er von keiner anderen Klasse her aufgerufen              ¦ + getInstance(s : String) : Singleton  ¦
-  // werden kann.                                                                  ¦ + main (args : String[]) : void        ¦
-  // Für das Testen erhält der Konstruktor einen Parameter vomn Typ String.        +----------------------------------------+
-  // Dieser Parameter wird dann der Instanz-Variable (oben deklariert) 
+  // Der Konstruktor der Klasse muss private deklariert werden. Somit ist          ï¿½ - Singleton(comment : String)          ï¿½
+  // sichergestellt, dass er von keiner anderen Klasse her aufgerufen              ï¿½ + getInstance(s : String) : Singleton  ï¿½
+  // werden kann.                                                                  ï¿½ + main (args : String[]) : void        ï¿½
+  // Fï¿½r das Testen erhï¿½lt der Konstruktor einen Parameter vomn Typ String.        +----------------------------------------+
+  // Dieser Parameter wird dann der Instanz-Variable (oben deklariert)
   // zugewiesen.
   private Singleton(String comment){
     this.comment = comment;
@@ -35,19 +35,14 @@ public class Singleton{                                                         
   }
   //
   // Die statische Methode getInstance() wird als Klassen-Methode                  +-----------------------------------+
-  // aufgerufen. Sie prüft, ob eine Instanz der Klasse Singleton                   ¦ getInstance(String s)             ¦
-  // vorliegt. Wenn nicht, wird die Klasse erzeugt.                                ¦  +--------------------------------+
-  // Als Rückgabewert liefert die Methode die Referenz auf das                     ¦  ¦ if Objektreferenz = null       ¦
-  // Objekt.                                                                       ¦  ¦    --+-------------------------+
-  // Für das Testen erhält die Methode einen Parameter vom Typ String.            ¦  ¦ then ¦ erzeuge neues Objekt    ¦
-  // Dieser Parameter wird dann dem Konstruktor übergeben.                         ¦  +------+-------------------------+
-  // Die Methode getInstance liefert in jedem Fall eine gültige                    ¦  ¦ > Objetreferenz                ¦
+  // aufgerufen. Sie prï¿½ft, ob eine Instanz der Klasse Singleton                   ï¿½ getInstance(String s)             ï¿½
+  // vorliegt. Wenn nicht, wird die Klasse erzeugt.                                ï¿½  +--------------------------------+
+  // Als Rï¿½ckgabewert liefert die Methode die Referenz auf das                     ï¿½  ï¿½ if Objektreferenz = null       ï¿½
+  // Objekt.                                                                       ï¿½  ï¿½    --+-------------------------+
+  // Fï¿½r das Testen erhï¿½lt die Methode einen Parameter vom Typ String.            ï¿½  ï¿½ then ï¿½ erzeuge neues Objekt    ï¿½
+  // Dieser Parameter wird dann dem Konstruktor ï¿½bergeben.                         ï¿½  +------+-------------------------+
+  // Die Methode getInstance liefert in jedem Fall eine gï¿½ltige                    ï¿½  ï¿½ > Objetreferenz                ï¿½
   // Referenz auf (genau) ein Singleton-Objekt.                                    +--+--------------------------------+
-
-  //
-  // Liefert den Wert des Attributs comment (Kommentar)
-  // Diese Methdeo ist hier nur aus Testzwecken. Sie greift auf die
-  // Instanz-Variable (das Attribut) des Objekts zu.
   public String getComment(){
     return comment;
   }
