@@ -43,6 +43,6 @@ public class AutoErbauer {
 
         motor.print();
         rad.print();
-        bmw.print();
+
     }
 }
