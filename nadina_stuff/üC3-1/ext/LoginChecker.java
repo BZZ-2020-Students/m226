@@ -10,7 +10,7 @@ public class LoginChecker
   private final String user = "nadina";
   private final String password = "nadina";
 
-  private int counter;
+  private int errcounter;
   // Konstanter maximaler Wert für die Zählervariable
   private int maxError = 3;
 
@@ -19,14 +19,15 @@ public class LoginChecker
 
   // Referenz des GUI-Objekt
   public LoginChecker(LoginGUI gui) {
-    // eigene Referenz this
     this.gui = gui;
+    // eigene Referenz this
+    gui.setLoginChecker(this);
   }
 
 
   // update()
   public boolean update() {
-    // equals Methode
+    // equals Methode beide zusammen
     if (gui.getUser().equals(user) && gui.getPassword().equals(password)) {
       return true;
     } else if (maxError == 3) {
@@ -35,4 +36,25 @@ public class LoginChecker
       return false;
     }
   }
+  /* Zweite möglichkeit
+  -------------------------------------------
+  * public boolean update(){
+  * if (gui.getUser.equals(user){
+  *   if(guit.getPasswort.equals)passwort){
+  *   return true;
+  * } else{
+  *     if (errcounter++  > maxError){
+  *     gui.loginAbort();
+  *     return false;
+  *  }
+  * } // ende von if
+  * else {
+  *   if ( errcounter++ > macError){
+  *     gui.loginAbort();
+  *     return false;
+  *     }
+  *   }
+  * }
+  * */
 }
+
