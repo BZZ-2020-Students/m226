@@ -22,4 +22,8 @@ public class Motor {
     public void setHubraum(float hubraum) {
         this.hubraum = hubraum;
     }
+
+    public void print() {
+        System.out.println("Motor: " + hubraum + " Liter / " + leistung + " PS");
+    }
 }
