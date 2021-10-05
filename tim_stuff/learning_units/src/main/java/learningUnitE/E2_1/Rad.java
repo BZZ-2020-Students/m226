@@ -24,6 +24,6 @@ public class Rad {
     }
 
     public void print() {
-        System.out.println("Rad: Typ = " + typ + "/ Grösse " + groesse + " Zoll");
+        System.out.println("Rad: Typ = " + typ + " / Grösse " + groesse + " Zoll");
     }
 }
