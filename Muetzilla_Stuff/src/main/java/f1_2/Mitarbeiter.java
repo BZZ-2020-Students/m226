@@ -12,7 +12,7 @@ public class Mitarbeiter extends Person {
         this.lohn = lohn;
     }
 
-    protected int getPersNr() {
+    public int getPersNr() {
         return persNr;
     }
 
@@ -20,7 +20,7 @@ public class Mitarbeiter extends Person {
         this.persNr = persNr;
     }
 
-    protected float getLohn() {
+    public float getLohn() {
         return lohn;
     }
 
@@ -28,7 +28,7 @@ public class Mitarbeiter extends Person {
         this.lohn = lohn;
     }
 
-    protected String getTelNr() {
+    public String getTelNr() {
         return telNr;
     }
 
