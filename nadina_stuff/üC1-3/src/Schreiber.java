@@ -33,7 +33,6 @@ public class Schreiber {
         schr2.print();
         schr3.print();
         schr4.print();
-        schr5.print();
 
         System.out.println("Total Instanzen : " + Schreiber.count);
     }

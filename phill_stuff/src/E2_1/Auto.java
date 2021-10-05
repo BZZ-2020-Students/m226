@@ -34,6 +34,12 @@ public class Auto {
     }
 
     public void print(){
-
+        System.out.println("Nummerschild = " + nrSchild);
+        if (reader != null) {
+            for (int i = 0; i < reader.length; i++) {
+                System.out.println("Rad = " + reader[i].toString());
+            }
+        }
+        System.out.println("Motor Leistung = " + motor.getLeistung());
     }
 }
