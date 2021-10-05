@@ -24,4 +24,15 @@ public class MitarbeiterAdmin extends Mitarbeiter{
     public void setLohn(float lohn) {
         this.lohn = lohn;
     }
+
+    @Override
+    public String toString() {
+        return "MitarbeiterAdmin{" +
+                "persNr=" + persNr +
+                ", lohn=" + lohn +
+                ", name='" + name + '\'' +
+                ", alter=" + alter +
+                ", adresse='" + adresse + '\'' +
+                '}';
+    }
 }
