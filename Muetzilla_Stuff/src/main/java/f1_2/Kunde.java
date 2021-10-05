@@ -19,5 +19,6 @@ public class Kunde extends Person {
     @Override
     public void print() {
         System.out.println("Kontakt: " + kontakt.getName());
+        
     }
 }
