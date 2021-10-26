@@ -17,6 +17,12 @@ public class Autorliste {
     }
 
     public void printOut() {
-        
+        System.out.println("Autoren:");
+        System.out.println(" Vorhandene Autoren: " + autorenCntr + " {");
+        for (int i = 0; i < autorenCntr; i++) {
+            System.out.println("\t " + (i + 1) + ": " + autoren[i].getName());
+        }
+
+        System.out.println("}");
     }
 }

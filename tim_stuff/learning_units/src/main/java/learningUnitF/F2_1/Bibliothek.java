@@ -30,14 +30,12 @@ public class Bibliothek {
 
     public void printOut() {
         System.out.println("Medien:");
-        System.out.println(" Vorhandene Medien: " + medienListe.length + " {");
-        int counter = 1;
-        for (PrintMedium medium : medienListe) {
-            System.out.println("\t " + counter);
-            System.out.println("\t\t Titel: " + medium.getTitel());
-            System.out.println("\t\t Verlag: " + medium.getTitel());
-
-            counter++;
+        System.out.println(" Vorhandene Medien: " + medienCntr + " {");
+        for (int i = 0; i < medienCntr; i++) {
+            System.out.println("\t " + (i + 1) + ": {");
+            System.out.println("\t\t Titel: " + medienListe[i].getTitel());
+            System.out.println("\t\t Verlag: " + medienListe[i].getVerlag());
+            System.out.println("\t }");
         }
         System.out.println(" }");
     }
