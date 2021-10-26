@@ -1,5 +1,7 @@
 package f21;
 
+import static f21.PrintMedium.addTab2Text;
+
 public class Bibliothek {
     private final PrintMedium[] medienListe;
     private int medienCntr = 0;
@@ -33,5 +35,14 @@ public class Bibliothek {
             System.out.println(printMedium.getTitel() + " " + printMedium.getVerlag());
         }
         System.out.println();
+    }
+
+    public void showInventory() {
+        System.out.println(addTab2Text("Titel") + addTab2Text("Verlag") + addTab2Text("ISBN-Nummer") + addTab2Text("Autor") + addTab2Text("Ausgabedatum"));
+        System.out.println("-".repeat(30 * 5));
+        for (PrintMedium printMedium : medienListe) {
+            if (printMedium == null) continue;
+            printMedium.showInfo();
+        }
     }
 }

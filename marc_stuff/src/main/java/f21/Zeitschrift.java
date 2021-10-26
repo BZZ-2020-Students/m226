@@ -20,4 +20,9 @@ public class Zeitschrift extends PrintMedium {
                 ", ausgabedatum='" + ausgabedatum + '\'' +
                 '}';
     }
+
+    @Override
+    public void showInfo() {
+        System.out.println(addTab2Text(titel) + addTab2Text(verlag) + addTab2Text("") + addTab2Text("") + addTab2Text(ausgabedatum));
+    }
 }
