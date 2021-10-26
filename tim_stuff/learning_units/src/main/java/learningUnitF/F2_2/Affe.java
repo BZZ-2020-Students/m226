@@ -1,3 +1,5 @@
+package learningUnitF.F2_2;
+
 /*
  * Beschreibt einen Affen mit der Art und dem Namen
  */
