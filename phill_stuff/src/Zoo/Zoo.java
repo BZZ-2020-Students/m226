@@ -115,6 +115,7 @@ public class Zoo {
         zoo.addGebaeude(gehege4);
         zoo.addGebaeude(restaurant);
 
+        System.out.println(zoo.toString());
         zoo.getInventar();
     }
 
