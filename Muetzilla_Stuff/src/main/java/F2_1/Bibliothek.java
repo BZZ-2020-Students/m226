@@ -13,8 +13,9 @@ public class Bibliothek {
     }
 
     public void addMedium(PrintMedium medium) {
-        if (medienCntr > MAX_MEDIEN) {
+        if (medienCntr < MAX_MEDIEN) {
             medienListe[medienCntr] = medium;
+            medienCntr++;
         }
     }
 
@@ -27,6 +28,10 @@ public class Bibliothek {
     }
 
     public void printOut() {
-        
+        System.out.println("Inventar der Bibliothek");
+        System.out.println("-----------------------");
+        for (int i = 0; i < medienCntr; i++) {
+            System.out.println(medienListe[i].getTitel());
+        }
     }
 }
