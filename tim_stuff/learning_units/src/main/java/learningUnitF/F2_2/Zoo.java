@@ -59,10 +59,79 @@ public class Zoo {
         return "Zoo : " + zooName + " mit " + gebaeudeCounter + " Gebäuden und " + tierCounter + " Tieren";
     }
 
+    public double getInventar() {
+        double result = 0;
+        for (int i = 0; i < tierCounter; i++) {
+            result += alleTiere[i].getInventarWert();
+        }
+        for (int i = 0; i < gebaeudeCounter; i++) {
+            result += alleGebaeude[i].getInventarWert();
+        }
+        return result;
+    }
 
+    public static void main(String[] args) {
+        Affe affe1 = new Affe("monke", 69.420f);
+        Affe affe2 = new Affe("monky", 420.69f);
+        Loewe loewe = new Loewe("ich löwe", 12);
 
-    /* to do....
-     * ergänzen Sie hier die main-Methode gemäss Aufgabenstellung F2-2
-     */
+        Pinguin[] pinguine = new Pinguin[5];
+        for (int i = 0; i < pinguine.length; i++) {
+            pinguine[i] = new Pinguin("pinguin" + i, i);
+        }
 
+        Zebra zebra1 = new Zebra("zebri", 2);
+        Zebra zebra2 = new Zebra("zebre", 2);
+
+        Stall stall = new Stall("bez-stall", 4);
+
+        Becken becken = new Becken("bez-becken", 123);
+
+        Restaurant restaurant = new Restaurant("bez-restaurant", 1, 100);
+
+        Zoo zoo = new Zoo("zoo", 10, 3);
+
+        zoo.addGebaeude(stall);
+        zoo.addGebaeude(becken);
+        zoo.addGebaeude(restaurant);
+
+        for (Pinguin pinguin : pinguine) {
+            zoo.addTier(pinguin);
+        }
+
+        zoo.addTier(affe1);
+        zoo.addTier(affe2);
+
+        zoo.addTier(loewe);
+
+        zoo.addTier(zebra1);
+        zoo.addTier(zebra2);
+
+        System.out.println("Zoo '" + zoo.getZooName() + "'");
+        System.out.println(" Tiere:");
+        System.out.println(" anzahl Tiere: " + zoo.tierCounter + " {");
+        for (int i = 0; i < zoo.tierCounter; i++) {
+            Tier tier = zoo.alleTiere[i];
+            System.out.println("\t " + i + ": {");
+            System.out.println("\t\t Art: " + tier.getTierArt());
+            System.out.println("\t\t Name: " + tier.getName());
+            System.out.println("\t\t Inventarwert: " + tier.getInventarWert());
+            System.out.println("\t }");
+        }
+        System.out.println(" }");
+
+        System.out.println(" Gebäude:");
+        System.out.println(" anzahl Gebäude: " + zoo.gebaeudeCounter + " {");
+        for (int i = 0; i < zoo.gebaeudeCounter; i++) {
+            Gebaeude gebaeude = zoo.alleGebaeude[i];
+            System.out.println("\t " + i + ": {");
+            System.out.println("\t\t Typ: " + gebaeude.getGebaeudeTyp());
+            System.out.println("\t\t Bezeichnung: " + gebaeude.getGebaeudeBezeichnung());
+            System.out.println("\t\t Inventarwert: " + gebaeude.getInventarWert());
+            System.out.println("\t }");
+        }
+        System.out.println(" }");
+
+        System.out.println("Inventar Wert des Zoos '" + zoo.getZooName() + "' = " + zoo.getInventar());
+    }
 }
