@@ -16,4 +16,12 @@ public abstract class PrintMedium {
     public String getVerlag() {
         return verlag;
     }
+
+    public abstract void showInfo();
+
+    public String addTabulator2Text(String text) {
+        int textLength = 100;
+        text += " ".repeat(textLength);
+        return text;
+    }
 }

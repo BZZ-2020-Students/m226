@@ -11,4 +11,9 @@ public class Zeitschrift extends PrintMedium {
     public String getAusgabeDatum() {
         return ausgabeDatum;
     }
+
+    @Override
+    public void showInfo() {
+        
+    }
 }

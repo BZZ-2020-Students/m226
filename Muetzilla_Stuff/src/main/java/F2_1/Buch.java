@@ -17,4 +17,9 @@ public class Buch extends PrintMedium {
     public Autor getAutor() {
         return autor;
     }
+
+    @Override
+    public void showInfo() {
+
+    }
 }
