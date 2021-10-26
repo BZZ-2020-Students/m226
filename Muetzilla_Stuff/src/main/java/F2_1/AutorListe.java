@@ -1,7 +1,7 @@
 package F2_1;
 
 public class AutorListe {
-    public static int MAX_AUTOREN;
+    public static int MAX_AUTOREN = 5;
     private Autor[] autoren = new Autor[MAX_AUTOREN];
     private int autorenCntr = 0;
 
@@ -21,7 +21,7 @@ public class AutorListe {
     }
 
     public void printOut() {
-        
+
     }
 
 }
