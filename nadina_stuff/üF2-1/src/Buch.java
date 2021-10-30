@@ -10,8 +10,8 @@ public class Buch extends PrintMedium {
    private Autor autor;
 
    // Constructor
-   public Buch(String titel, String isbnNr, Autor autor){
-      super(titel);
+   public Buch(String titel, String isbnNr, Autor autor, String verlag){
+      super(titel, verlag);
       this.isbnNr = isbnNr;
       this.autor = autor;
    }
@@ -20,15 +20,9 @@ public class Buch extends PrintMedium {
       return isbnNr;
    }
 
-   public void setIsbnNr(String isbnNr) {
-      this.isbnNr = isbnNr;
-   }
-
    public Autor getAutor() {
       return autor;
    }
 
-   public void setAutor(Autor autor) {
-      this.autor = autor;
-   }
+
 }

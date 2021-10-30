@@ -22,4 +22,5 @@ public class Zeitschrift extends PrintMedium{
     public void setAusgabeDatum(String ausgabeDatum) {
         this.ausgabeDatum = ausgabeDatum;
     }
+
 }
