@@ -24,16 +24,4 @@ abstract class PrintMedium {
         return titel;
     }
 
-    public void setTitel(String titel) {
-        this.titel = titel;
-    }
-
-    // verlag
-    public String getVerlag() {
-        return verlag;
-    }
-
-    public void setVerlag(String verlag) {
-        this.verlag = verlag;
-    }
 }

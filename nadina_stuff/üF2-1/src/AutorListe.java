@@ -6,7 +6,7 @@
 
 public class AutorListe {
 
-    public int MAX_AUTOREN;
+    public int MAX_AUTOREN = 7;
     private Autor[] autoren = new Autor[MAX_AUTOREN];
     private int autorenCntr = 0;
 
@@ -15,11 +15,8 @@ public class AutorListe {
     }
 
     public void addAutor(Autor autor){
-        if(autorenCntr < MAX_AUTOREN){
             autoren[autorenCntr] = autor;
             autorenCntr++;
-        }
-
     }
 
     public Autor getAutor(int index){
@@ -29,8 +26,10 @@ public class AutorListe {
     public void printOut() {
         System.out.println("Autoren-Liste");
         System.out.println("-------------");
-        for (int i = 0; i < autorenCntr; i++) {
-            System.out.println(autoren[i].getName());
+        for (int i = 0; i < autoren.length; i++) {
+            if(autoren[i] != null){
+                System.out.println(autoren[i].getName());
+            }
         }
         System.out.println();
     }

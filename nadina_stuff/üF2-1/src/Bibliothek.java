@@ -6,7 +6,7 @@
 
 public class Bibliothek {
     private static int MAX_MEDIEN = 7;
-    private int medienCntr = 0;
+    private int medienCntr;
     private PrintMedium[] medienListe = new PrintMedium[MAX_MEDIEN];
 
     public Bibliothek (){
@@ -18,6 +18,8 @@ public class Bibliothek {
     }
 
     public void addMedium(PrintMedium medium){
+        medienListe[medienCntr] = medium;
+        medienCntr++;
 
     }
 
@@ -29,8 +31,15 @@ public class Bibliothek {
         return MAX_MEDIEN;
     }
 
-    public void printOut(){
-        System.out.println("Inventar der Bibliothek");
-        System.out.println("-----------------------");
+    public void printOut() {
+        System.out.println("Bibliothek");
+        System.out.println("-------------");
+        for (int i = 0; i < medienListe.length; i++) {
+            if(medienListe[i] != null){
+                System.out.println(medienListe[i].getTitel());
+                System.out.println(medienListe[i].verlag);
+            }
+        }
+        System.out.println();
     }
 }
