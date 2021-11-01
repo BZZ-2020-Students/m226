@@ -42,4 +42,8 @@ public class Bibliothek {
         }
         System.out.println();
     }
+
+    public void showInventory(){
+
+    }
 }

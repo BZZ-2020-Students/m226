@@ -24,5 +24,12 @@ public class Buch extends PrintMedium {
       return autor;
    }
 
+   public void printOut(){
 
+   }
+
+   @Override
+   public void showInfo() {
+
+   }
 }

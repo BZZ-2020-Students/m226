@@ -24,4 +24,13 @@ abstract class PrintMedium {
         return titel;
     }
 
-}
+    public String getVerlag() {
+        return verlag;
+    }
+
+    public abstract void showInfo();
+
+    public void addTabulator2Text(String text){
+
+    }
+ }

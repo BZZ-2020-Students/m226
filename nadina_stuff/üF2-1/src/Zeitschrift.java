@@ -23,4 +23,8 @@ public class Zeitschrift extends PrintMedium{
         this.ausgabeDatum = ausgabeDatum;
     }
 
+    @Override
+    public void showInfo() {
+
+    }
 }
