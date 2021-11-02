@@ -8,7 +8,6 @@ public class SchulApp {
     public static void main(String[] args) {
         s = new Schueler("Muster", "Max");
         z = new Zeugnis(s);
-        System.out.println(z.getSchuelerName()+"\n");
 
         f = new Fach("Mathe");
         z.addFach(f);
@@ -16,8 +15,10 @@ public class SchulApp {
         f = new Fach("Deutsch");
         z.addFach(f);
 
-        for (int i = 0; i < 2; i++) {
-            System.out.println("Fach: " + z.getFachName(i));
-        }
+        Fach fach = z.getFach(0);
+        fach.addNote(5.0f);
+        fach.addNote(3.5f);
+
+        System.out.println(z.printZeugnis());
     }
 }

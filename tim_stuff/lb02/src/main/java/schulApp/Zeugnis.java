@@ -43,6 +43,16 @@ public class Zeugnis {
     }
 
     public String printZeugnis() {
-        return "";
+        String zeugnis = "Zeugnis für: " + getSchuelerName() + "\n";
+        for (int i = 0; i < fachCounter; i++) {
+            Fach fach = faecher[i];
+
+            String fachUndNoten = "\t" + fach.getBezeichnung() + "\n";
+            for (int j = 0; j < fach.getAnzahlNoten(); j++) {
+                fachUndNoten += "\t\t" + fach.getNotenWert(j) + "\n";
+            }
+            zeugnis += fachUndNoten;
+        }
+        return zeugnis;
     }
 }
