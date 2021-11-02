@@ -18,6 +18,6 @@ public class Schueler {
     }
 
     public String getNameVorname() {
-        return name + ", " + vorname;
+        return name + " " + vorname;
     }
 }
