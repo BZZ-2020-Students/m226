@@ -20,6 +20,6 @@ public class Buch extends PrintMedium {
 
     @Override
     public void showInfo() {
-
+        System.out.println(addTab2Text(titel) + addTab2Text(verlag) + addTab2Text(isbnNr) + addTab2Text(autor.getName()) + addTab2Text(""));
     }
 }
