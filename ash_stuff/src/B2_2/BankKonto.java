@@ -18,20 +18,17 @@ public class BankKonto {
     }
 
     public BankKonto(float wert, float zinssatz) {
-        this.kontostand = wert;
+        this(wert);
         this.aktZinssatz = zinssatz;
     }
 
     public BankKonto(float wert, float zinssatz, float deckung) {
-        this.kontostand = wert;
-        this.aktZinssatz = zinssatz;
+        this(wert, zinssatz);
         this.maxUnterdeckung = deckung;
     }
 
     public BankKonto(float wert, float zinssatz, float deckung, String person) {
-        this.kontostand = wert;
-        this.aktZinssatz = zinssatz;
-        this.maxUnterdeckung = deckung;
+        this(wert, zinssatz, deckung);
         this.besitzer = person;
     }
 

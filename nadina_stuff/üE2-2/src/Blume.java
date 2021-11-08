@@ -8,6 +8,7 @@ public class Blume {
 
     public Blume(){
         blueten[0] = new Bluete(new Color(255, 0, 0));
+        this.wurzel = new Wurzel("Wurzel");
     }
 
     public String getName() {
