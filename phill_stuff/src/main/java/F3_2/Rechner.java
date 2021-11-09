@@ -1,4 +1,4 @@
-package F3_2;
+/*package F3_2;
 
 public class Rechner {
     public static void main(String[] args) {
@@ -50,3 +50,4 @@ public class Rechner {
 
 
 }
+*/
