@@ -1,0 +1,44 @@
+/**
+ *
+ * Beschreibung
+ *
+ * @version 1.0 vom 23.10.2020
+ * @author 
+ */
+
+public class Tour {
+  
+  // Anfang Attribute
+  private int tourNummer;
+  private Bus bus;
+  // Ende Attribute
+  
+  /**
+     * Erzeugt ei Tour-Objekt mit einer Tour-Nummer.
+     */
+  public Tour(int tourNummer){
+    this.tourNummer = tourNummer;
+  }
+  
+  // Anfang Methoden
+  /**
+     * Lieert die Tournummer.
+     */
+  public int getTourNummer() {
+    return tourNummer;
+  }
+  
+  /**
+     * weist ein Bus-Objekt der Tour zu.
+     */
+  public void setBus(Bus bus){
+    this.bus = bus;
+  }
+  
+  
+  public static void main(String[] ars){
+   
+  }
+  // Ende Methoden
+} // end of Tour
+
