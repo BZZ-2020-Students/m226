@@ -1,0 +1,11 @@
+1.a) Abnormales Ende
+b) Sie kann mit Try und Catch abgefangen werden
+c) Dammit das Programm nicht zu eienm abrupten Ende kommt
+d) bei Checked Exceptions verlangt der Code nach einem Try und Catch
+
+2.a) ArrayIndexOutOfBoundsException
+b) Zeile 26 wegen Index out of bounds
+
+4.a) ArrayIndexOutOfBoundsException
+b) Zeile 38
+
