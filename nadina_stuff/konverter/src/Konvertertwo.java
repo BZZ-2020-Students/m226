@@ -29,7 +29,7 @@ public class Konvertertwo {
         }
         rem = number % 2;
         printbin(number / 2);
-        System.out.print(rem);
+        System.out.print(rem);  System.out.print(rem);
     }
 
     static void printhex(int number){
