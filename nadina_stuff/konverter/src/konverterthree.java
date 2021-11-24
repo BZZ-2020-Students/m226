@@ -4,6 +4,7 @@ import java.util.Scanner;
  * author @Nadina Amlser (shirin197)
  * date    24.11.2021
  * version 1.0v
+ * Version Expert
  * */
 
 public class konverterthree {
