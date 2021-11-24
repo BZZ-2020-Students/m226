@@ -44,6 +44,10 @@ public class Bibliothek {
     }
 
     public void showInventory(){
-
+        System.out.println("Titel                   Verlag                      ISBN-Nummer             Autor               Ausgabedatum");
+        System.out.println("------------------------------------------------------------------------------------------------------------");
+        for( int i = 0; i < medienCntr; i++){
+            this.getMedium(i).showInfo();;
+        }
     }
 }
