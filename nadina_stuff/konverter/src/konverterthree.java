@@ -62,7 +62,7 @@ public class konverterthree {
     static void printbin(int number){
         int rem1;
         if (number <= 1) {
-            System.out.print(number); // print damit alles nacheinader ausgegeben wird
+            System.out.print(number); // print damit alles nacheinander ausgegeben wird
             return;
         }
         rem1 = number % 2;
