@@ -1,4 +1,4 @@
-package a226.g1_1;
+package a226.g1_123;
 
 class NotenbereichException extends Exception {
 
