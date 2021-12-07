@@ -15,8 +15,9 @@ public class MapDemo {
         System.out.println("-----------");
         Set<String> namen = liste.keySet();
         for (String name : namen){
-            System.out.println("Der Beruf von " + name + ": " );
-            System.out.println(liste.get(name));
+            System.out.println("Der Beruf von " + name + ": "  + liste.get(name));
         }
     }
 }
+
+
