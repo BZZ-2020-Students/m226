@@ -17,6 +17,19 @@ public class Autoliste {
         return alleAutos.get(index).getMarke();
     }
 
+    public String getModel(int index) {
+        return alleAutos.get(index).getModel();
+    }
+
+    public Float getLeistung(int index) {
+        return alleAutos.get(index).getLeistung();
+    }
+
+    public Float getPreis(int index) {
+        return alleAutos.get(index).getPreis();
+    }
+
+
     public void addAuto(Auto auto) {
         alleAutos.add(auto);
     }
