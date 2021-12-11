@@ -11,8 +11,8 @@ import java.util.Random;
 public class SortTemplate {
 
     private int[] unsortedArray;
-    private final int SIZE = 10;
-    private final int RANGE = 20;
+    private final int SIZE = 50000;
+    private final int RANGE = 100000;
     int zwschSpeicher = 0;
 
 
@@ -36,7 +36,7 @@ public class SortTemplate {
     private void sort() {
         for(int i = 0; i < unsortedArray.length - 1; i++){
             for(int j = 0; j < (unsortedArray.length - 1 - i); j++){
-                if(unsortedArray[j + 1] <= unsortedArray[j]){  // Zahlen vergleichen
+                if(unsortedArray[j + 1] > unsortedArray[j]){  // Zahlen vergleichen
                     // tausch von j und j + 1
                     zwschSpeicher = unsortedArray[j];
                     unsortedArray[j] = unsortedArray[j + 1];
