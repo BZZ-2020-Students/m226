@@ -1,3 +1,9 @@
+/*
+* Author: Amsler Nadina (shirin197)
+* Date:
+*/
+
+
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
@@ -39,5 +45,6 @@ public class SortTemplate {
                 }
             }
         }
+        System.out.println(Arrays.toString(unsortedArray));
     }
 }
