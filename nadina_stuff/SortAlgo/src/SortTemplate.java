@@ -36,7 +36,7 @@ public class SortTemplate {
     private void sort() {
         for(int i = 0; i < unsortedArray.length - 1; i++){
             for(int j = 0; j < (unsortedArray.length - 1 - i); j++){
-                if(unsortedArray[j + 1] > unsortedArray[j]){  // Zahlen vergleichen
+                if(unsortedArray[j + 1] <= unsortedArray[j]){  // Zahlen vergleichen
                     // tausch von j und j + 1
                     zwschSpeicher = unsortedArray[j];
                     unsortedArray[j] = unsortedArray[j + 1];
