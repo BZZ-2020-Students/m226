@@ -11,9 +11,9 @@ import java.util.Random;
 public class SortTemplate {
 
     private int[] unsortedArray;
-    private final int SIZE = 50000;
-    private final int RANGE = 100000000;
-    int tmp = 0;
+    private final int SIZE = 10;
+    private final int RANGE = 20;
+    int zwschSpeicher = 0;
 
 
     public static void main(String[] args) {
@@ -34,14 +34,13 @@ public class SortTemplate {
     }
 
     private void sort() {
-        for(int i = 0; i < unsortedArray.length; i++){
+        for(int i = 0; i < unsortedArray.length - 1; i++){
             for(int j = 0; j < (unsortedArray.length - 1 - i); j++){
-                // - 1 nach oben ins zweite for von if gesetzt
-                if(unsortedArray[j] > unsortedArray[j]){
-                    // tausch
-                    tmp = unsortedArray[j -1];
-                    unsortedArray[j - 1] = unsortedArray[j+1];
-                    unsortedArray[j] = tmp;
+                if(unsortedArray[j + 1] <= unsortedArray[j]){  // Zahlen vergleichen
+                    // tausch von j und j + 1
+                    zwschSpeicher = unsortedArray[j];
+                    unsortedArray[j] = unsortedArray[j + 1];
+                    unsortedArray[j + 1] = zwschSpeicher;
                 }
             }
         }
