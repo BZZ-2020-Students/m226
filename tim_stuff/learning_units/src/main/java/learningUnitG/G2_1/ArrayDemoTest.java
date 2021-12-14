@@ -1,4 +1,4 @@
-package a226.g1_1;
+package learningUnitG.G2_1;
 
 import org.junit.Before;
 
