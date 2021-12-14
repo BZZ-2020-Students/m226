@@ -37,4 +37,8 @@ public class Autoliste {
     public int getSize() {
         return alleAuto.size();
     }
+
+    public Vector<Auto> getAlleAuto() {
+        return alleAuto;
+    }
 }

@@ -1,5 +1,7 @@
 package learningUnitH.H2_1;
 
+import java.util.Iterator;
+
 public class AutoApp {
 
     public static void main(String[] args) {
@@ -21,8 +23,12 @@ public class AutoApp {
     }
 
     public static void print(Autoliste liste) {
-        for (int i = 0; i < liste.getSize(); i++) {
-            System.out.println("Auto Nr. " + i + ": " + liste.getKennzeichen(i) + " - " + liste.getMarke(i));
+        Iterator<Auto> iter = liste.getAlleAuto().iterator();
+        Auto auto;
+        int counter = 0;
+        while (iter.hasNext()) {
+            auto = iter.next();
+            System.out.println("Auto Nr. " + counter++ + ": " + auto.getKennzeichen() + " - " + auto.getMarke());
         }
         System.out.println("--------------------------------------");
     }
