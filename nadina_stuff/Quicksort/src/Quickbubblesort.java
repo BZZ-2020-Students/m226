@@ -19,10 +19,10 @@ public class Quickbubblesort {
 
     public void bubblesort(){
         Random random = new Random();
-        int[] bubble = new int[100];
+        int[] bubble = new int[100000];
 
         for(int i = 0; i < bubble.length; i ++){
-            bubble[i] = random.nextInt(100);
+            bubble[i] = random.nextInt(100000);
         }
 
 
@@ -46,10 +46,10 @@ public class Quickbubblesort {
 
     public void Quicksort(){
         Random random = new Random();
-        int[] array = new int[100];
+        int[] array = new int[100000];
 
         for(int i = 0; i < array.length; i ++){
-            array[i] = random.nextInt(100);
+            array[i] = random.nextInt(100000);
         }
 
         // low index 0, and the high index last element = length - 1
