@@ -9,11 +9,11 @@ public class Quickbubblesort {
         Quickbubblesort run = new Quickbubblesort();
         startTime = new Date().getTime();
         run.bubblesort();
-        System.out.println("Dauer der Sortierung: " + (new Date().getTime() - startTime) + "ms");
+        System.out.println("Bubblesort, dauer der Sortierung: " + (new Date().getTime() - startTime) + "ms");
 
         startTime = new Date().getTime();
         run.Quicksort();
-        System.out.println("Dauer der Sortierung: " + (new Date().getTime() - startTime) + "ms");
+        System.out.println("Quicksort, dauer der Sortierung: " + (new Date().getTime() - startTime) + "ms");
 
     }
 
