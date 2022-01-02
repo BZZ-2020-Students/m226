@@ -1,6 +1,12 @@
+  /*
+   * Author: Amsler Nadina (shirin197)
+   * Date: 02.01.2022
+   */
 import java.util.Arrays;
+import java.util.Date;
+import java.util.Random;
 
-public class Quicksort02 {
+  public class Quicksort02 {
     public static void main(String[] args) {
         int[] array = new int[] {4,7,2,8,9,6,1,3};
 
@@ -13,8 +19,9 @@ public class Quicksort02 {
         System.out.println("After: ");
         System.out.println(Arrays.toString(array));
 
-    }
-    private static void quicksort02(int[] array, int lowIndex, int highIndex) {
+        }
+
+      private static void quicksort02(int[] array, int lowIndex, int highIndex) {
 
         if(lowIndex >= highIndex){
             return;
@@ -45,6 +52,5 @@ public class Quicksort02 {
         array[i1] = array[i2];
         array[i2] = temp;
     }
-
 }
 
