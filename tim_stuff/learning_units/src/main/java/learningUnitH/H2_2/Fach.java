@@ -43,7 +43,7 @@ public class Fach extends NotenWertVergleicher implements Comparable<Fach> {
 
     public float getSchnitt() {
         float summe = 0;
-        for(Note note : notenSammlung) {
+        for (Note note : notenSammlung) {
             summe += note.getNote();
         }
 
@@ -66,7 +66,7 @@ public class Fach extends NotenWertVergleicher implements Comparable<Fach> {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder(bezeichnung + "(" + kurzzeichen + ")" + " : " + getSchnitt() + "\n");
-        int counter=1;
+        int counter = 1;
         for (Note note : notenSammlung) {
             result.append("\t").append(counter++).append(". Note ").append(note).append("\n");
         }
