@@ -5,7 +5,6 @@ import java.util.Comparator;
 public class NotenWertVergleicher implements Comparator<Note> {
     @Override
     public int compare(Note notePre, Note notePost) {
-        // TODO: 04.01.2022
-        return 0;
+        return Float.compare(notePre.getNote(), notePost.getNote());
     }
 }

@@ -2,7 +2,7 @@ package learningUnitH.H2_2;
 
 import java.util.Vector;
 
-public class Fach extends NotenWertVergleicher implements Comparable<Fach> {
+public class Fach implements Comparable<Fach> {
     private String bezeichnung;
     private String kurzzeichen;
     private Vector<Note> notenSammlung;
@@ -51,16 +51,16 @@ public class Fach extends NotenWertVergleicher implements Comparable<Fach> {
     }
 
     public void sortiereNotenNachWert() {
-        // TODO: 04.01.2022
+        notenSammlung.sort(new NotenWertVergleicher());
     }
 
     public void sortiereNoteNachDatum() {
-        // TODO: 04.01.2022
+        notenSammlung.sort(new NotenDatumVergleicher());
     }
 
     @Override
     public int compareTo(Fach o) {
-        return 0;
+        return bezeichnung.compareTo(o.bezeichnung);
     }
 
     @Override

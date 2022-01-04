@@ -3,7 +3,7 @@ package learningUnitH.H2_2;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class Note extends NotenWertVergleicher {
+public class Note {
     private float note;
     private GregorianCalendar datum;
 

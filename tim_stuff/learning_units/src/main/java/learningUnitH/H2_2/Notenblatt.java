@@ -47,6 +47,23 @@ public class Notenblatt {
         inf.addNote(new Note(5, 2014, 7, 3));
         fachListe.add(inf);
 
+        System.out.println("UNSORTIERT");
+        System.out.println("****************************************************************");
+        System.out.println(this);
+
+        System.out.println("SORTIERT nach Datum");
+        System.out.println("****************************************************************");
+        this.sortiereNachDatumsWert();
+        System.out.println(this);
+
+        System.out.println("SORTIERT nach Fächern");
+        System.out.println("****************************************************************");
+        this.sortiereNachFach();
+        System.out.println(this);
+
+        System.out.println("SORTIERT nach noten");
+        System.out.println("****************************************************************");
+        this.sortiereNachNotenwert();
         System.out.println(this);
     }
 
@@ -75,20 +92,24 @@ public class Notenblatt {
     }
 
     public void sortiereNachFach() {
-        // TODO: 04.01.2022
+        fachListe.sort(null);
     }
 
     public void sortiereNachNotenwert() {
-        // TODO: 04.01.2022
+        for (Fach fach : fachListe) {
+            fach.sortiereNotenNachWert();
+        }
     }
 
     public void sortiereNachDatumsWert() {
-        // TODO: 04.01.2022
+        for (Fach fach : fachListe) {
+            fach.sortiereNoteNachDatum();
+        }
     }
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder("Notenblatt für" + name + " " + vorname + "\n" +
+        StringBuilder result = new StringBuilder("Notenblatt für " + name + " " + vorname + "\n" +
                 "---------------------------------------------------------" +
                 "\n");
 
