@@ -7,7 +7,6 @@ public class Notenblatt {
     private ArrayList<Fach> faecher = new ArrayList<>();
 
     public Notenblatt() {
-        print();
         faecher.add(new Fach("Französisch", "Franz"));
         faecher.get(0).addNote(new Note(4f, 5, 11, 2022));
         faecher.get(0).addNote(new Note(3.5f, 12, 10, 2021));
@@ -25,11 +24,13 @@ public class Notenblatt {
         faecher.get(2).addNote(new Note(4.25f, 27, 9, 2020));
 
 
-        Iterator<Fach> iterator = faecher.iterator();
-
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next().toString());
-        }
+        print();
+        System.out.println("----------------------------------- Nach Datum Sortiert ----------------------------------------");
+        sortiertNachDatum();
+        print();
+        System.out.println("----------------------------------- Nach Wert Sortiert ----------------------------------------");
+        sortiertNachWert();
+        print();
     }
 
     public static void main(String[] args) {
@@ -39,5 +40,21 @@ public class Notenblatt {
     public void print() {
         System.out.println("Notenblatt für Max Mustermann");
         System.out.println("-----------------------------");
+        Iterator<Fach> iterator = faecher.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next().toString());
+        }
+    }
+
+    public void sortiertNachDatum() {
+        for (Fach f : faecher) {
+            f.notenNachDatum();
+        }
+    }
+
+    public void sortiertNachWert() {
+        for (Fach f : faecher) {
+            f.notenNachWert();
+        }
     }
 }

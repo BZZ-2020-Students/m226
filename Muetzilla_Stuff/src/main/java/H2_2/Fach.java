@@ -3,7 +3,7 @@ package H2_2;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Fach {
+public class Fach implements Comparable<Fach> {
 
     private ArrayList<Note> noten = new ArrayList<>();
     private String name;
@@ -29,6 +29,14 @@ public class Fach {
         return tempSchnitt / noten.size();
     }
 
+    public void notenNachWert() {
+        noten.sort(new NotenWertVergleicher());
+    }
+
+    public void notenNachDatum() {
+        noten.sort(new NotenDatumsVergelicher());
+    }
+
 
     @Override
     public String toString() {
@@ -39,5 +47,10 @@ public class Fach {
             buildString += "\t" + iterator.next().toString() + "\n";
         }
         return buildString;
+    }
+
+    @Override
+    public int compareTo(Fach o) {
+        return abkuerzung.compareTo(o.abkuerzung);
     }
 }
