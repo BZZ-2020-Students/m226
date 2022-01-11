@@ -1,6 +1,6 @@
-package H2_1;
+package learningUnitH.H3_1;
 
-public class Auto {
+public class Auto implements Comparable<Auto> {
 
     private String marke;
     private String kennzeichen;
@@ -18,7 +18,12 @@ public class Auto {
         return kennzeichen;
     }
 
-    public String toString(){
-        return(kennzeichen + " - " + marke);
+    public String toString() {
+        return (kennzeichen + " - " + marke);
+    }
+
+    @Override
+    public int compareTo(Auto o) {
+        return this.getKennzeichen().compareTo(o.getKennzeichen());
     }
 }

@@ -1,5 +1,7 @@
-package H2_1;
+package learningUnitH.H3_1;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.ListIterator;
 import java.util.Vector;
 
@@ -45,5 +47,9 @@ public class Autoliste {
             System.out.println("Auto Nr. " + i.nextIndex() + ": " + i.next());
         }
         System.out.println("--------------------------------------");
+    }
+
+    public void sortiereAuto() {
+        Collections.sort(alleAuto);
     }
 }

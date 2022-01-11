@@ -1,4 +1,6 @@
-package H2_1;
+package learningUnitH.H2_1;
+
+import java.util.Iterator;
 
 public class AutoApp {
 
@@ -10,22 +12,24 @@ public class AutoApp {
         liste.addAuto(new Auto("Porsche", "BE 1"));
         liste.addAuto(new Auto("Fiat", "TI 5556677"));
 
-        liste.printListe();
+        print(liste);
 
         liste.removeAuto(2);
-        liste.printListe();
+        print(liste);
 
         Auto a = liste.getAuto(1);
         liste.removeAuto(a);
-        liste.printListe();
+        print(liste);
     }
 
-    /*
     public static void print(Autoliste liste) {
-        for (int i = 0; i < liste.getSize(); i++) {
-            System.out.println("Auto Nr. " + i + ": " + liste.getKennzeichen(i) + " - " + liste.getMarke(i));
+        Iterator<Auto> iter = liste.getAlleAuto().iterator();
+        Auto auto;
+        int counter = 0;
+        while (iter.hasNext()) {
+            auto = iter.next();
+            System.out.println("Auto Nr. " + counter++ + ": " + auto.getKennzeichen() + " - " + auto.getMarke());
         }
         System.out.println("--------------------------------------");
     }
-    */
 }

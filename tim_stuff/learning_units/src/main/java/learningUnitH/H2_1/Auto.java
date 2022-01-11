@@ -1,4 +1,4 @@
-package H2_1;
+package learningUnitH.H2_1;
 
 public class Auto {
 
@@ -16,9 +16,5 @@ public class Auto {
 
     public String getKennzeichen() {
         return kennzeichen;
-    }
-
-    public String toString(){
-        return(kennzeichen + " - " + marke);
     }
 }

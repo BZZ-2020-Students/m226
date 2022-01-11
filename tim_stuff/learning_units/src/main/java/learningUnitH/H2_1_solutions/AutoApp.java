@@ -1,4 +1,4 @@
-package H2_1;
+package learningUnitH.H2_1_solutions;
 
 public class AutoApp {
 

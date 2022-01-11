@@ -1,4 +1,4 @@
-package H2_1;
+package learningUnitH.H2_1_solutions;
 
 public class Auto {
 
@@ -18,7 +18,7 @@ public class Auto {
         return kennzeichen;
     }
 
-    public String toString(){
-        return(kennzeichen + " - " + marke);
+    public String toString() {
+        return (kennzeichen + " - " + marke);
     }
 }

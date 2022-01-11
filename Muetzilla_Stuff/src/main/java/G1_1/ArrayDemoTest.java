@@ -6,7 +6,7 @@ package G1_1;
  * @author
  */
 
-import org.junit.Before;
+//import org.junit.Before;
 
 
 public class ArrayDemoTest {
@@ -17,7 +17,7 @@ public class ArrayDemoTest {
     // Anfang Methoden
     private static ArrayDemo demo;
 
-    @Before
+    //@Before
     public void setUp() {
         demo = new ArrayDemo();
     }

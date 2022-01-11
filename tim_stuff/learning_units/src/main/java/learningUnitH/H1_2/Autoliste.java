@@ -1,6 +1,5 @@
-package H2_1;
+package learningUnitH.H1_2;
 
-import java.util.ListIterator;
 import java.util.Vector;
 
 public class Autoliste {
@@ -37,13 +36,5 @@ public class Autoliste {
 
     public int getSize() {
         return alleAuto.size();
-    }
-
-    public void printListe() {
-        ListIterator<Auto> i = alleAuto.listIterator();
-        while (i.hasNext()) {
-            System.out.println("Auto Nr. " + i.nextIndex() + ": " + i.next());
-        }
-        System.out.println("--------------------------------------");
     }
 }
