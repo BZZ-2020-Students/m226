@@ -27,6 +27,9 @@ public class SingletonTest{
     objA = Singleton.getInstance("a");
     objB = Singleton.getInstance("b");
 
+    System.out.println(objA.getComment());
+    System.out.println(objB.getComment());
+
   }
   
 }
