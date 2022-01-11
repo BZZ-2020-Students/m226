@@ -1,4 +1,4 @@
-package I1_1_phill.gui;
+package I2_1.gui;
 
 // HIER ALLE NÖTIGEN IMPORTE ANGEBEN, SOWOHL ZU
 // DEN EIGENEN PAKETEN ALS AUCH JENEN AUS DER JAVA-BIBLIOTHEK
@@ -9,8 +9,8 @@ package I1_1_phill.gui;
 // AM DIESEM CODE BITTE KEINE ANPASSUNGEN VORNEHMEN. WENN DIE AUSGABE
 // NICHT KORREKT ERFOLGT, LIEGT DER FEHELR AUF SEITEN DER DATEN-MODELLE.
 
-import I1_1_phill.data.Person;
-import I1_1_phill.data.PersonAbstractTableModel;
+import I2_1.data.Person;
+import I2_1.data.PersonAbstractTableModel;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;

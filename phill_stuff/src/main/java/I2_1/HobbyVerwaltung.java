@@ -1,13 +1,13 @@
-package I1_1_phill;
+package I2_1;
 
 // HIER ALLE NÖTIGEN IMPORTE ANGEBEN, SOWOHL ZU
 // DEN EIGENEN PAKETEN ALS AUCH JENEN AUS DER JAVA-BIBLIOTHEK
 // STUDIEREN SIE DAZU DIE API DER VERWENDETEN KLASSEN
 
-import I1_1_phill.data.HobbyListe;
-import I1_1_phill.data.Person;
-import I1_1_phill.data.PersonenListe;
-import I1_1_phill.gui.HobbyVerwaltungGUI;
+import I2_1.data.HobbyListe;
+import I2_1.data.Person;
+import I2_1.data.PersonenListe;
+import I2_1.gui.HobbyVerwaltungGUI;
 
 
 public class HobbyVerwaltung {

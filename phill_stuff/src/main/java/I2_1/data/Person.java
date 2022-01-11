@@ -1,4 +1,4 @@
-package I1_1_phill.data;
+package I2_1.data;
 
 
 public class Person implements Comparable<Person> {
