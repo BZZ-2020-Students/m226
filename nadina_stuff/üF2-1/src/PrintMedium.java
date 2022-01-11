@@ -30,7 +30,13 @@ abstract class PrintMedium {
 
     public abstract void showInfo();
 
-    public void addTabulator2Text(String text){
-
+    public String addTabulator2Text(String text){
+        if (text == null){
+            text = " ";
+        }
+        for (int i = text.length(); i < 24; i++){
+            text += " ";
+        }
+        return text;
     }
  }

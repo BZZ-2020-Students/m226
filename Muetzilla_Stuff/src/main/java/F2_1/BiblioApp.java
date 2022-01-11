@@ -18,6 +18,7 @@ public class BiblioApp {
         bibliothek.addMedium(new Buch("Ein Tag im Weltraum", "Space-Verlag", "0987654321", autorListe.getAutor(1)));
         bibliothek.addMedium(new Buch("Der Mond und ich", "Moon-Verlag", "6789054321", autorListe.getAutor(2)));
         //
-        bibliothek.printOut();
+        // bibliothek.printOut();
+        bibliothek.showInventory();
     }
 }

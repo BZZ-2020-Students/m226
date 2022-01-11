@@ -34,4 +34,16 @@ public class Bibliothek {
             System.out.println(medienListe[i].getTitel());
         }
     }
+
+    public void showInventory() {
+        String inventory = PrintMedium.addTab2Text("Titel") + PrintMedium.addTab2Text("Verlag") + PrintMedium.addTab2Text("ISBN-Nummer") + PrintMedium.addTab2Text("Autor") + PrintMedium.addTab2Text("Ausgabedatum");
+        inventory += "\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+        System.out.println(inventory);
+        for (PrintMedium pm : medienListe) {
+            if (pm != null) {
+                pm.showInfo();
+            }
+        }
+    }
+
 }

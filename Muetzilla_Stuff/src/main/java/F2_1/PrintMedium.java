@@ -19,9 +19,12 @@ public abstract class PrintMedium {
 
     public abstract void showInfo();
 
-    public String addTabulator2Text(String text) {
-        int textLength = 100;
-        text += " ".repeat(textLength);
-        return text;
+    public static String addTab2Text(String string) {
+        StringBuilder sBuilder = new StringBuilder(string);
+        while (sBuilder.length() < 30) {
+            sBuilder.append(" ");
+        }
+        string = sBuilder.toString();
+        return string;
     }
 }
