@@ -103,7 +103,7 @@ public class ArrayDemoTest {
     * */
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void negativeIndex() throws ArrayIndexOutOfBoundsException{
-        demo.removeWert(-1);
+        demo.removeWert(-10);
     }
 
     /*
