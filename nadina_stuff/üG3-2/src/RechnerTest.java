@@ -73,4 +73,13 @@ public class RechnerTest {
         assertEquals(1.0309278f, result);
     }
 
+    @Test
+    public void divideByZero() {
+        try{
+            rechner.divide(15,0);
+        }catch(DivideException e){
+            e.getMessage();
+        }
+    }
+
 }

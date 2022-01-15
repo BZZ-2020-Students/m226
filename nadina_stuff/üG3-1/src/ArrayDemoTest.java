@@ -58,7 +58,7 @@ public class ArrayDemoTest {
     @Test
     public void testAddValid(){
         try{
-            demo.addWert(4f);
+            demo.addWert('a');
             // fail(); // lässt den Test durchfallen - fail wenn das erreicht wird
         }catch(NotenbereichException e){
             System.out.println("Kein korrekter Test!");
