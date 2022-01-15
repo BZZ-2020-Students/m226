@@ -82,4 +82,15 @@ public class RechnerTest {
         }
     }
 
+    @Test
+    public void dividedByChar(){
+        try {
+            // a == 97
+            assertEquals(1.0f, rechner.divide(97.0f, 'a'));
+            System.out.println("Erfolgreich!");
+        } catch (DivideException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
