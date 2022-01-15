@@ -78,7 +78,7 @@ public class RechnerTest {
         try{
             rechner.divide(15,0);
         }catch(DivideException e){
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
 
