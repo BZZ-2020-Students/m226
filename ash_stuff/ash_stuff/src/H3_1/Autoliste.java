@@ -33,7 +33,7 @@ public class Autoliste {
         alleAuto.remove(index);
     }
 
-    public void removeAuto(H2_1.Auto auto) {
+    public void removeAuto(Auto auto) {
         alleAuto.remove(auto);
     }
 
