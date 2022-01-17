@@ -1,5 +1,7 @@
 import java.util.Comparator;
+// import java.util.*;
 
+// comperator -> auch einfach java.util.*;
 public class NotenWertVergleicher implements Comparator<Note> {
 
     public int compare(Note notePre, Note notePost) {
