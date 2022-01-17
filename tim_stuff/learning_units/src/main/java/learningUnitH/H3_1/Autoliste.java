@@ -1,6 +1,5 @@
 package learningUnitH.H3_1;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.ListIterator;
 import java.util.Vector;
