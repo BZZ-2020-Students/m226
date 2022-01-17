@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.ListIterator;
 import java.util.Vector;
@@ -20,6 +21,10 @@ public class Autoliste {
 
     public void addAuto(Auto auto){
         alleAuto.add(auto);
+    }
+
+    public String getFarbe(int index){
+        return  alleAuto.get(index).getFarbe();
     }
 
     public Auto getAuto(int index){
