@@ -64,7 +64,12 @@ public class Mannschaft {
      * @param spieler Das Spieler-Objekt, das zugefügt wird
      * @return true, wenn der Spieler zugefügt werden kann, sonst false
      */
-    public boolean addSpieler(Spieler spieler) {
+    public boolean addSpieler(Spieler spieler) throws SpielerNameException {
+        if (spieler.getName() == null || spieler.getName().isBlank() || spieler.getName().isEmpty()
+                || spieler.getVorname() == null || spieler.getVorname().isBlank() || spieler.getVorname().isEmpty()) {
+            throw new SpielerNameException();
+        }
+
         // noch Platz im Team
         if (alleSpieler.size() < MAX_SPIELER_PRO_TEAM) {
             // lizenzierter Spieler? kann er noch aufgenommen werden?
