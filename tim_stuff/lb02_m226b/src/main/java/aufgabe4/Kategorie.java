@@ -1,4 +1,4 @@
-package aufgabe3;
+package aufgabe4;
 
 public class Kategorie {
     private String bezeichnung;

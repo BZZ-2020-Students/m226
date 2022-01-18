@@ -1,4 +1,4 @@
-package aufgabe3;
+package aufgabe4;
 
 /**
  * Applikation die einige Klasseninstanziert und Methodenaufrufe realisiert.

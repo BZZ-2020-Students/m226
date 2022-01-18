@@ -1,4 +1,4 @@
-package aufgabe3;
+package aufgabe4;
 
 import org.junit.jupiter.api.BeforeEach;
 
