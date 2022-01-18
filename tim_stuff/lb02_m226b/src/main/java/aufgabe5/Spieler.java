@@ -45,11 +45,15 @@ public class Spieler implements Comparable<Spieler> {
         checkIfNameIsEmpty();
     }
 
-    public void checkIfNameIsEmpty() throws SpielerNameException {
-        if (this.getName() == null || this.getName().isBlank() || this.getName().isEmpty()
-                || this.getVorname() == null || this.getVorname().isBlank() || this.getVorname().isEmpty()) {
+    public void checkIfStringIsEmpty(String s) throws SpielerNameException {
+        if (s == null || s.isBlank() || s.isEmpty()) {
             throw new SpielerNameException();
         }
+    }
+
+    public void checkIfNameIsEmpty() throws SpielerNameException {
+        checkIfStringIsEmpty(this.getName());
+        checkIfStringIsEmpty(this.getVorname());
     }
 
     /**
@@ -84,7 +88,8 @@ public class Spieler implements Comparable<Spieler> {
      *
      * @param name Name des Spielers
      */
-    public void setName(String name) {
+    public void setName(String name) throws SpielerNameException {
+        checkIfStringIsEmpty(name);
         this.name = name;
     }
 
