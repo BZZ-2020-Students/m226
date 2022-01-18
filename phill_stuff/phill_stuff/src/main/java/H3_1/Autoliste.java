@@ -56,6 +56,7 @@ public class Autoliste {
         while (iterator.hasNext()) {
             System.out.println("Auto Nummer:" + iterator.nextIndex() + " " + iterator.next());
         }
+        System.out.println("------------------------------");
     }
 
     public void sortiereAuto() {

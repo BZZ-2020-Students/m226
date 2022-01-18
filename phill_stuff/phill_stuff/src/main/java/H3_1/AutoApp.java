@@ -6,6 +6,7 @@ public class AutoApp {
         Auto a2 = new Auto("BMW", "325i", 192f, 8000f, "LOWE36");
         Auto a3 = new Auto("Jaguar", "XJ6", 200f, 10000f, "THEJAG");
         Auto a4 = new Auto("Ferrari", "F40", 478f, 400000f, "F40");
+        System.out.println(a1.compareTo(a2));
         Autoliste list = new Autoliste();
         list.addAuto(a1);
         list.addAuto(a2);
