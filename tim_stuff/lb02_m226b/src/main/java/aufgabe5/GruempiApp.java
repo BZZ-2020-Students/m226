@@ -22,7 +22,7 @@ public class GruempiApp {
         try {
             s = new Spieler("Muster", "Max", 45, true);
         } catch (SpielerNameException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
         s.setIstCaptain(true);
         // Spieler der Mannschaft zuweisen
