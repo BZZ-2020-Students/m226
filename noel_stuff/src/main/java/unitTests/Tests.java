@@ -39,6 +39,7 @@ public class Tests {
     public void exceptionTest() {
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
             main.throwException(true);
+            System.out.println("");
         });
     }
 }

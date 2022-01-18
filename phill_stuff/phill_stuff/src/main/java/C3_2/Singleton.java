@@ -1,3 +1,5 @@
+package C3_2;
+
 /**
    Demonstration des (sinnvollen) EInsatzes von statisch deklarierten
    Variablen und Methoden am Beispiel des Singleton-Pattern.
