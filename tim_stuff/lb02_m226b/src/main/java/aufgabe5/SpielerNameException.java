@@ -11,6 +11,6 @@ public class SpielerNameException extends Exception {
      * Default Konstruktor für die Exception welche die Fehlermeldung angibt
      */
     public SpielerNameException() {
-        super("Der Name des Spielers darf nicht leer sein!");
+        super("Der Name bzw der Vorname des Spielers darf nicht leer sein!");
     }
 }
