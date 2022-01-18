@@ -167,7 +167,7 @@ public class Spieler {
     Spieler spieler;
     spieler = new Spieler("Hans","Mark", 18, true);
     spieler = new Spieler("Amsler", "Nadina", 19, true);
-    spieler= new Spieler("Rajkumar", "Thurika", 17, true);
+    spieler = new Spieler("Rajkumar", "Thurika", 17, true);
 
     spieler.sortiereNotenNachWert();
     System.out.println(spieler);

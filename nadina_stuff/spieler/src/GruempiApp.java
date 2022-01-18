@@ -19,12 +19,18 @@ public class GruempiApp {
     Spieler s = new Spieler("Muster", "Max", 45, true);
     s.setIstCaptain(true);
     // Spieler der Mannschaft zuweisen
-    m.addSpieler(s);
-    m.addSpieler(new Spieler("Kuhn", "Köbi", 44, true));
-    m.addSpieler(new Spieler("Botteron", "Rene", 36, true));
-    m.addSpieler(new Spieler("Peter", "Hans", 31, false));
-    m.addSpieler(new Spieler("Müller", "Oli", 34, false));
-    m.addSpieler(new Spieler("Jörg", "Kurt", 39, false));
+
+    try {
+      m.addSpieler(s);
+      m.addSpieler(new Spieler(" ", "Köbi", 44, true));
+      m.addSpieler(new Spieler("Botteron", "Rene", 36, true));
+      m.addSpieler(new Spieler("Peter", "Hans", 31, false));
+      m.addSpieler(new Spieler("Müller", "Oli", 34, false));
+      m.addSpieler(new Spieler("Jörg", "Kurt", 39, false));
+
+    }catch (NullPointerException SpielerNameException){
+      System.err.println("Error:" + SpielerNameException.getMessage());
+    }
 
     // Mannschaftinfo ausgeben. Die Daten werden alle aus dem Mannschaft-Objekt
     // ausgelesen!
