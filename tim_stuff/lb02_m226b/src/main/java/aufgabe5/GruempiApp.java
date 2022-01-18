@@ -18,7 +18,12 @@ public class GruempiApp {
         // Ein paar Stammdaten erzeugen
         Kategorie k = new Kategorie("Senioren 1", 3);
         Mannschaft m = new Mannschaft("the best one", k);
-        Spieler s = new Spieler("Muster", "Max", 45, true);
+        Spieler s = null;
+        try {
+            s = new Spieler("Muster", "Max", 45, true);
+        } catch (SpielerNameException e) {
+            e.printStackTrace();
+        }
         s.setIstCaptain(true);
         // Spieler der Mannschaft zuweisen
         try {
@@ -28,7 +33,6 @@ public class GruempiApp {
             m.addSpieler(new Spieler("Peter", "Hans", 31, false));
             m.addSpieler(new Spieler("Müller", "Oli", 34, false));
             m.addSpieler(new Spieler("Jörg", "Kurt", 39, false));
-            m.addSpieler(new Spieler("", "    ", 39, false));
         } catch (SpielerNameException e) {
             System.err.println(e.getMessage());
         }

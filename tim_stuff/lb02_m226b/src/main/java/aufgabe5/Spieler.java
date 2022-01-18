@@ -35,12 +35,21 @@ public class Spieler implements Comparable<Spieler> {
      * @param alter         Alter des Spielers
      * @param istLizenziert true, wenn eine Spiellizenz vorliegt
      */
-    public Spieler(String name, String vorname, int alter, boolean istLizenziert) {
+    public Spieler(String name, String vorname, int alter, boolean istLizenziert) throws SpielerNameException {
         this.name = name;
         this.vorname = vorname;
         this.alter = alter;
         this.istLizenziert = istLizenziert;
         this.istCaptain = false;
+
+        checkIfNameIsEmpty();
+    }
+
+    public void checkIfNameIsEmpty() throws SpielerNameException {
+        if (this.getName() == null || this.getName().isBlank() || this.getName().isEmpty()
+                || this.getVorname() == null || this.getVorname().isBlank() || this.getVorname().isEmpty()) {
+            throw new SpielerNameException();
+        }
     }
 
     /**
@@ -49,7 +58,12 @@ public class Spieler implements Comparable<Spieler> {
      * @param args
      */
     public static void main(String[] args) {
-        Spieler spieler = new Spieler("Irmler", "Tim", 18, false);
+        Spieler spieler = null;
+        try {
+            spieler = new Spieler("Irmler", "Tim", 18, false);
+        } catch (SpielerNameException e) {
+            e.printStackTrace();
+        }
 
         System.out.println(spieler);
     }
