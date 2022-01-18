@@ -1,4 +1,4 @@
-package aufgabe1;
+package aufgabe2;
 
 /**
  * Die Klasse representiet einen Fussballspieler/eine Fussballspielerin.
