@@ -4,7 +4,8 @@ package aufgabe3;
  * Applikation die einige Klasseninstanziert und Methodenaufrufe realisiert.
  *
  * @author René Probst
- * @version 1.0 vom 20.12.2014
+ * @author Irmler Tim
+ * @version 1.1 vom 18.01.2022
  */
 
 public class GruempiApp {
@@ -38,6 +39,12 @@ public class GruempiApp {
         System.out.println(mannschaftAusgabe(m));
     }
 
+    /**
+     * formatiert einen String mit allen wichtigen Infos von einer Mannschaft und gibt diesen zurück
+     *
+     * @param m Die Mannschaft
+     * @return den formatierten String
+     */
     private static String mannschaftAusgabe(Mannschaft m) {
         StringBuilder out = new StringBuilder("Mannschaft : " + m.getName() + "\n");
         out.append("\tKategorie    ").append(m.getKategorie().getBezeichnung()).append("\n");
