@@ -41,26 +41,6 @@ public class Mannschaft {
         alleSpieler = new Vector<>(MAX_SPIELER_PRO_TEAM);
     }
 
-    public static void main(String[] args) {
-        Mannschaft m = new Mannschaft("Tim team", new Kategorie("Sachen", 2));
-        m.addSpieler(new Spieler("Irmler", "Tim", 18, false));
-        m.addSpieler(new Spieler("Marc", "", 17, false));
-        m.addSpieler(new Spieler("Ash", "", 19, false));
-
-        for (int i = 0; i < m.getAnzSpieler(); i++) {
-            Spieler spieler = m.getSpieler(i);
-            System.out.println("spieler = " + spieler);
-        }
-
-        m.sortieren();
-        System.out.println(".------");
-
-        for (int i = 0; i < m.getAnzSpieler(); i++) {
-            Spieler spieler = m.getSpieler(i);
-            System.out.println(spieler);
-        }
-    }
-
     // Anfang Methoden
 
     /**

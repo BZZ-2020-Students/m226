@@ -29,15 +29,23 @@ public class GruempiApp {
 
         // Mannschaftinfo ausgeben. Die Daten werden alle aus dem Mannschaft-Objekt
         // ausgelesen!
+        System.out.println(mannschaftAusgabe(m));
+
+        // alles wird jetzt sortiert ausgegeben!
+
+        m.sortieren();
+
+        System.out.println(mannschaftAusgabe(m));
+    }
+
+    private static String mannschaftAusgabe(Mannschaft m) {
         StringBuilder out = new StringBuilder("Mannschaft : " + m.getName() + "\n");
         out.append("\tKategorie    ").append(m.getKategorie().getBezeichnung()).append("\n");
         out.append("\tAnz. Spieler ").append(m.getAnzSpieler()).append(", davon lizenziert ").append(m.getLizenzierteSpieler()).append("\n\nSpielerliste\n-----------------------\n");
         for (int i = 0; i < m.getAnzSpieler(); i++) {
             out.append(m.getSpieler(i).toString()).append("\n");
         } // end of for
-        System.out.println(out);
-
-        //
+        return out.toString();
     }
 
     // Ende Methoden
