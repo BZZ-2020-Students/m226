@@ -17,7 +17,7 @@ package aufgabe3;
  * @version 1.1 vom 18.01.2022
  */
 
-public class Spieler {
+public class Spieler implements Comparable<Spieler> {
 
     // Anfang Attribute
     private String name;
@@ -171,6 +171,17 @@ public class Spieler {
         return vorname + " " + name + " " + alter + " jährig" + "\n" +
                 "\tlizenziert\t " + ((istLizenziert) ? "ja" : "nein") + "\n" +
                 "\tCaptain\t\t " + ((istCaptain) ? "ja" : "nein");
+    }
+
+    /**
+     * Sortiert die Spieler nach alter
+     *
+     * @param o der zu vergleichende Spieler
+     * @return -1 wenn weniger, 0 wenn gleich, 1 wenn mehr
+     */
+    @Override
+    public int compareTo(Spieler o) {
+        return Integer.compare(this.alter, o.alter);
     }
 
     // Ende Methoden
