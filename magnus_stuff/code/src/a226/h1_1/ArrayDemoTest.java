@@ -30,7 +30,6 @@ public class ArrayDemoTest {
         try {
             demo.addWert(4.0f);
         } catch (Exception e) {
-            // nicht behandlen
         } finally {
             assertEquals(1, demo.getAnzahlElemente());
         }
@@ -42,7 +41,6 @@ public class ArrayDemoTest {
             for (int i = 0; i < demo.MAX_STELLEN; )
                 demo.addWert(4.0f);
         } catch (Exception e) {
-            // nicht behandlen
         } finally {
             assertEquals(demo.MAX_STELLEN, demo.getAnzahlElemente());
         }
@@ -64,7 +62,6 @@ public class ArrayDemoTest {
             demo.addWert(4.0f);
             assertEquals(4.0f, demo.getNote(0), 0.001f);
         } catch (Exception e) {
-            // nicht testen
         }
     }
 
