@@ -66,7 +66,7 @@ public class ArrayDemo{
       demo.addWert(5.0f);
       demo.addWert(3.5f);
       demo.addWert(4.0f);
-      demo.addWert(5.0f);
+      demo.addWert(7.0f);
       demo.addWert(3.5f);
     }catch (NotenbereichException e){
       System.err.println("Error, der Wert liegt ausserhalb des Erwünschten Bereiches :  " + e.getMessage());
