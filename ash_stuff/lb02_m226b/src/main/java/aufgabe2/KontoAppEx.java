@@ -2,7 +2,7 @@ package aufgabe2;
 
 public class KontoAppEx {
   
-  public static void main(String[] ars) throws KontoUeberzugEcxeption {
+  public static void main(String[] ars) {
     
     BankKonto bk= new BankKonto();
     Lohnkonto lk= new Lohnkonto(300.0f);
