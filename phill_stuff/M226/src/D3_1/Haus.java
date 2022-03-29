@@ -6,4 +6,5 @@ public class Haus {
     public String getHausTyp(){
         return type;
     }
+
 }

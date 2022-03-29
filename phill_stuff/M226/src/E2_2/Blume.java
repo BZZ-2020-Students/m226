@@ -7,7 +7,7 @@ public class Blume {
     private Bluete[] blueten = new Bluete[3];
     private String name;
 
-    public Blume() {
+    public Blume(){
         wurzel = new Wurzel("Tiefwurzel");
 
         for (int i = 0; i < blueten.length; i++){

@@ -44,7 +44,7 @@ public class Auto implements Comparable<Auto> {
 
     @Override
     public int compareTo(Auto o) {
-        return this.kennzeichen.compareTo(o.kennzeichen);
+        return this.marke.compareTo(o.marke);
     }
 
 }
